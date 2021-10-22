@@ -1,0 +1,1532 @@
+
+@article{broderick_variational_2014,
+	title = {Variational {Bayes} for {Merging} {Noisy} {Databases}},
+	abstract = {Bayesian entity resolution merges together multiple, noisy databases and returns the minimal collection of unique individuals represented, together with their true, latent record values. Bayesian methods allow flexible generative models that share power across databases as well as principled quantification of uncertainty for queries of the final, resolved database. However, existing Bayesian methods for entity resolution use Markov monte Carlo method (MCMC) approximations and are too slow to run on modern databases containing millions or billions of records. Instead, we propose applying variational approximations to allow scalable Bayesian inference in these models. We derive a coordinate-ascent approximation for mean-field variational Bayes, qualitatively compare our algorithm to existing methods, note unique challenges for inference that arise from the expected distribution of cluster sizes in entity resolution, and discuss directions for future work in this domain.},
+	urldate = {2016-03-30},
+	journal = {arXiv:1410.4792 [stat]},
+	author = {Broderick, Tamara and Steorts, Rebecca C.},
+	month = oct,
+	year = {2014},
+	note = {arXiv: 1410.4792},
+	keywords = {Statistics - Machine Learning, Statistics - Methodology},
+	annote = {Comment: 12 pages}
+}
+
+@article{marchant2019d,
+  title={d-blink: Distributed End-to-End Bayesian Entity Resolution},
+  author={Marchant, Neil G and Steorts, Rebecca C and Kaplan, Andee and Rubinstein, Benjamin IP and Elazar, Daniel N},
+  journal={arXiv preprint arXiv:1909.06039},
+  year={2019}
+}
+
+@inproceedings{christen_2009,
+  title={Robust record linkage blocking using suffix arrays},
+  author={De Vries, Timothy and Ke, Hui and Chawla, Sanjay and Christen, Peter},
+  booktitle={Proceedings of the 18th ACM conference on Information and knowledge management},
+  pages={305--314},
+  year={2009}
+}
+
+
+@article{tancredi_unified_2020,
+  title={A Unified Framework for De-Duplication and Population Size Estimation},
+  author={Tancredi, Andrea and Steorts, Rebecca and Liseo, Brunero and others},
+  journal={Bayesian Analysis},
+  year={2020},
+  publisher={International Society for Bayesian Analysis}
+}
+
+
+@article{Lahiri2005,
+	Author = {Lahiri, P. and M. D. Larsen},
+	Journal = {Journal of the American Statistical Association.},
+	Number = {469},
+	Pages = {222--230},
+	Title = {Regression Analysis with Linked Data.},
+	Volume = {100},
+	Year = {2005}}
+
+@misc{Sariyar2016,
+	Author = {Sariyar, Murat and Andreas Borg},
+	Date-Modified = {2017-06-18 19:55:51 +0000},
+	Howpublished = {\url{http://cran.r-project.org/package=RecordLinkage}},
+	Title = {Record Linkage in R. R package. Version 0.4-10},
+	Year = {2016}}
+
+@article{liseo2013some,
+	Author = {Liseo, Brunero and Tancredi, Andrea},
+	Journal = {URL http://www. ine. es/e/essnetdi\_ws2011/ppts/Liseo\_Tancredi. pdf},
+	Title = {Some advances on Bayesian record linkage and inference for linked data},
+	Year = {2013}}
+
+
+
+@techreport{mcveigh_scaling_2020,
+	Author = {Brendan S. McVeigh and Bradley T. Spahn and Jared S. Murray},
+	Date-Added = {2020-02-17 20:18:37 -0500},
+	Date-Modified = {2020-02-17 20:23:56 -0500},
+	Title = {Scaling Bayesian Probabilistic Record Linkage with Post-Hoc Blocking: An Application to the California Great Registers},
+	Year = {2020}}
+
+@article{christen_2014,
+	Author = {Vatsalan, Dinusha and Christen, Peter and O'Keefe, Christine M and Verykios, Vassilios S},
+	Journal = {Journal of Privacy and Confidentiality},
+	Number = {1},
+	Pages = {3},
+	Title = {An evaluation framework for privacy-preserving record linkage},
+	Volume = {6},
+	Year = {2014}}
+
+
+
+@article{christen2019data,
+  title={Data linkage: The big picture},
+  author={Christen, Peter},
+  journal={Harvard Data Science Review},
+  year={2019}
+}
+
+@article{steorts_bayesian_2016,
+	title = {A {Bayesian} {Approach} to {Graphical} {Record} {Linkage} and {Deduplication}},
+	volume = {111},
+	issn = {0162-1459},
+	doi = {10.1080/01621459.2015.1105807},
+	abstract = {We propose an unsupervised approach for linking records across arbitrarily many files, while simultaneously detecting duplicate records within files. Our key innovation involves the representation of the pattern of links between records as a bipartite graph, in which records are directly linked to latent true individuals, and only indirectly linked to other records. This flexible representation of the linkage structure naturally allows us to estimate the attributes of the unique observable people in the population, calculate transitive linkage probabilities across records (and represent this visually), and propagate the uncertainty of record linkage into later analyses. Our method makes it particularly easy to integrate record linkage with post-processing procedures such as logistic regression, capture–recapture, etc. Our linkage structure lends itself to an efficient, linear-time, hybrid Markov chain Monte Carlo algorithm, which overcomes many obstacles encountered by previously record linkage approaches, despite the high-dimensional parameter space. We illustrate our method using longitudinal data from the National Long Term Care Survey and with data from the Italian Survey on Household and Wealth, where we assess the accuracy of our method and show it to be better in terms of error rates and empirical scalability than other approaches in the literature. Supplementary materials for this article are available online.},
+	language = {en},
+	number = {516},
+	urldate = {2017-06-08},
+	journal = {Journal of the American Statistical Association},
+	author = {Steorts, Rebecca C. and Hall, Rob and Fienberg, Stephen E.},
+	month = oct,
+	year = {2016},
+	pages = {1660--1672}
+}
+
+@article{sadinle_generalized_2013,
+	title = {A {Generalized} {Fellegi}-{Sunter} {Framework} for {Multiple} {Record} {Linkage} {With} {Application} to {Homicide} {Record} {Systems}},
+	volume = {108},
+	issn = {0162-1459},
+	doi = {10.1080/01621459.2012.757231},
+	abstract = {We present a probabilistic method for linking multiple datafiles. This task is not trivial in the absence of unique identifiers for the individuals recorded. This is a common scenario when linking census data to coverage measurement surveys for census coverage evaluation, and in general when multiple record systems need to be integrated for posterior analysis. Our method generalizes the Fellegi–Sunter theory for linking records from two datafiles and its modern implementations. The goal of multiple record linkage is to classify the record K-tuples coming from K datafiles according to the different matching patterns. Our method incorporates the transitivity of agreement in the computation of the data used to model matching probabilities. We use a mixture model to fit matching probabilities via maximum likelihood using the Expectation–Maximization algorithm. We present a method to decide the record K-tuples membership to the subsets of matching patterns and we prove its optimality. We apply our method to the integration of the three Colombian homicide record systems and perform a simulation study to explore the performance of the method under measurement error and different scenarios. The proposed method works well and opens new directions for future research.},
+	language = {en},
+	number = {502},
+	urldate = {2017-07-06},
+	journal = {Journal of the American Statistical Association},
+	author = {Sadinle, Mauricio and Fienberg, Stephen E.},
+	month = jun,
+	year = {2013},
+	keywords = {EM algorithm, data matching, mixture model, Bell number, Census undercount, Data linkage, Multiple systems estimation, Partially ordered set},
+	pages = {385--397}
+}
+
+@article{jain_split-merge_2004,
+	title = {A {Split}-{Merge} {Markov} chain {Monte} {Carlo} {Procedure} for the {Dirichlet} {Process} {Mixture} {Model}},
+	volume = {13},
+	issn = {1061-8600, 1537-2715},
+	doi = {10.1198/1061860043001},
+	language = {en},
+	number = {1},
+	urldate = {2017-08-14},
+	journal = {Journal of Computational and Graphical Statistics},
+	author = {Jain, Sonia and Neal, Radford M.},
+	month = mar,
+	year = {2004},
+	pages = {158--182}
+}
+
+@article{fritsch_improved_2009,
+	title = {Improved criteria for clustering based on the posterior similarity matrix},
+	volume = {4},
+	issn = {1936-0975, 1931-6690},
+	doi = {10.1214/09-BA414},
+	abstract = {In this paper we address the problem of obtaining a single clustering estimate c{\textasciicircum}c{\textasciicircum}{\textbackslash}hat\{c\} based on an MCMC sample of clusterings c(1),c(2)…,c(M)c(1),c(2)…,c(M)c{\textasciicircum}\{(1)\},c{\textasciicircum}\{(2)\}{\textbackslash}ldots,c{\textasciicircum}\{(M)\} from the posterior distribution of a Bayesian cluster model. Methods to derive c{\textasciicircum}c{\textasciicircum}{\textbackslash}hat\{c\} when the number of groups KKK varies between the clusterings are reviewed and discussed. These include the maximum a posteriori (MAP) estimate and methods based on the posterior similarity matrix, a matrix containing the posterior probabilities that the observations iii and jjj are in the same cluster. The posterior similarity matrix is related to a commonly used loss function by Binder (1978). Minimization of the loss is shown to be equivalent to maximizing the Rand index between estimated and true clustering. We propose new criteria for estimating a clustering, which are based on the posterior expected adjusted Rand index. The criteria are shown to possess a shrinkage property and outperform Binder's loss in a simulation study and in an application to gene expression data. They also perform favorably compared to other clustering procedures.},
+	language = {EN},
+	number = {2},
+	urldate = {2017-09-27},
+	journal = {Bayesian Analysis},
+	author = {Fritsch, Arno and Ickstadt, Katja},
+	month = jun,
+	year = {2009},
+	mrnumber = {MR2507368},
+	zmnumber = {1330.62249},
+	keywords = {Markov chain Monte Carlo, Dirichlet process mixture model, adjusted Rand index, cluster analysis},
+	pages = {367--391}
+}
+
+@article{newman_distributed_2009,
+	title = {Distributed algorithms for topic models},
+	volume = {10},
+	abstract = {We describe distributed algorithms for two widely-used topic models, namely the Latent Dirichlet Allocation (LDA) model, and the Hierarchical Dirichet Process (HDP) model. In our distributed algorithms the data is partitioned across separate processors and inference is done in a parallel, distributed fashion. We propose two distributed algorithms for LDA. The first algorithm is a straightforward mapping of LDA to a distributed processor setting. In this algorithm processors concurrently perform Gibbs sampling over local data followed by a global update of topic counts. The algorithm is simple to implement and can be viewed as an approximation to Gibbs-sampled LDA. The second version is a model that uses a hierarchical Bayesian extension of LDA to directly account for distributed data. This model has a theoretical guarantee of convergence but is more complex to implement than the first algorithm. Our distributed algorithm for HDP takes the straightforward mapping approach, and merges newly-created topics either by matching or by topic-id. Using five real-world text corpora we show that distributed learning works well in practice. For both LDA and HDP, we show that the converged test-data log probability for distributed learning is indistinguishable from that obtained with single-processor learning. Our extensive experimental results include learning topic models for two multi-million document collections using a 1024-processor parallel computer.},
+	number = {Aug},
+	journal = {Journal of Machine Learning Research},
+	author = {Newman, David and Asuncion, Arthur and Smyth, Padhraic and Welling, Max},
+	editor = {McCallum, Andrew},
+	month = aug,
+	year = {2009},
+	pages = {1801--1828}
+}
+
+@article{lovell_clustercluster:_2013,
+	title = {{ClusterCluster}: {Parallel} {Markov} {Chain} {Monte} {Carlo} for {Dirichlet} {Process} {Mixtures}},
+	shorttitle = {{ClusterCluster}},
+	abstract = {The Dirichlet process (DP) is a fundamental mathematical tool for Bayesian nonparametric modeling, and is widely used in tasks such as density estimation, natural language processing, and time series modeling. Although MCMC inference methods for the DP often provide a gold standard in terms asymptotic accuracy, they can be computationally expensive and are not obviously parallelizable. We propose a reparameterization of the Dirichlet process that induces conditional independencies between the atoms that form the random measure. This conditional independence enables many of the Markov chain transition operators for DP inference to be simulated in parallel across multiple cores. Applied to mixture modeling, our approach enables the Dirichlet process to simultaneously learn clusters that describe the data and superclusters that define the granularity of parallelization. Unlike previous approaches, our technique does not require alteration of the model and leaves the true posterior distribution invariant. It also naturally lends itself to a distributed software implementation in terms of Map-Reduce, which we test in cluster configurations of over 50 machines and 100 cores. We present experiments exploring the parallel efficiency and convergence properties of our approach on both synthetic and real-world data, including runs on 1MM data vectors in 256 dimensions.},
+	urldate = {2018-01-11},
+	journal = {arXiv:1304.2302 [cs, stat]},
+	author = {Lovell, Dan and Malmaud, Jonathan and Adams, Ryan P. and Mansinghka, Vikash K.},
+	month = apr,
+	year = {2013},
+	note = {arXiv: 1304.2302},
+	keywords = {Computer Science - Learning, Statistics - Machine Learning, Computer Science - Distributed, Parallel, and Cluster Computing},
+	annote = {Comment: 12 pages, 10 figures. Submitted to ICML 2013 during third submission cycle}
+}
+
+@inproceedings{liang_permutation-augmented_2007,
+	address = {New York, NY, USA},
+	series = {{ICML} '07},
+	title = {A {Permutation}-augmented {Sampler} for {DP} {Mixture} {Models}},
+	isbn = {978-1-59593-793-3},
+	doi = {10.1145/1273496.1273565},
+	abstract = {We introduce a new inference algorithm for Dirichlet process mixture models. While Gibbs sampling and variational methods focus on local moves, the new algorithm makes more global moves. This is done by introducing a permutation of the data points as an auxiliary variable. The algorithm is a blocked sampler which alternates between sampling the clustering and sampling the permutation. The key to the efficiency of this approach is that it is possible to use dynamic programming to consider all exponentially many clusterings consistent with a given permutation. We also show that random projections can be used to effectively sample the permutation. The result is a stochastic hill-climbing algorithm that yields burn-in times significantly smaller than those of collapsed Gibbs sampling.},
+	urldate = {2018-03-23},
+	booktitle = {Proceedings of the 24th {International} {Conference} on {Machine} {Learning}},
+	publisher = {ACM},
+	author = {Liang, Percy and Jordan, Michael I. and Taskar, Ben},
+	year = {2007},
+	pages = {545--552}
+}
+
+@techreport{haramoto_efficient_2006,
+	title = {Efficient jump ahead for {F}2-linear random number generators},
+	abstract = {The fastest long-period random number generators currently available are based on linear re-currences modulo 2. So far, software that provides multiple disjoint streams and substreams has not been available for these generators because of the lack of efficient jump-ahead fa-cilities. In principle, it suffices to multiply the state (a k-bit vector) by an appropriate k × k binary matrix to find the new state far ahead in the sequence. However, when k is large (e.g., for a generator such as the popular Mersenne twister, for which k = 19937), this matrix-vector multiplication is slow and a large amount of memory is required to store the k × k matrix. In this paper, we provide a faster algorithm to jump ahead by a large number of steps in a linear recurrence modulo 2. The method uses much less than the k 2 bits of memory required by the matrix method. It is based on polynomial calculus modulo the characteristic polynomial of the recurrence and uses a sliding window algorithm for the multiplication. Key words: simulation; random number generation; jumping ahead; multiple streams 1.},
+	author = {Haramoto, Hiroshi and Matsumoto, Makoto and Nishimura, Takuji and Panneton, François},
+	year = {2006}
+}
+
+@article{yujian_normalized_2007,
+	title = {A {Normalized} {Levenshtein} {Distance} {Metric}},
+	volume = {29},
+	issn = {0162-8828},
+	doi = {10.1109/TPAMI.2007.1078},
+	abstract = {Although a number of normalized edit distances presented so far may offer good performance in some applications, none of them can be regarded as a genuine metric between strings because they do not satisfy the triangle inequality. Given two strings X and Y over a finite alphabet, this paper defines a new normalized edit distance between X and Y as a simple function of their lengths ({\textbar}X{\textbar} and {\textbar}Y{\textbar}) and the Generalized Levenshtein Distance (GLD) between them. The new distance can be easily computed through GLD with a complexity of O({\textbar}X{\textbar} cdot {\textbar}Y{\textbar}) and it is a metric valued in [0, 1] under the condition that the weight function is a metric over the set of elementary edit operations with all costs of insertions/deletions having the same weight. Experiments using the AESA algorithm in handwritten digit recognition show that the new distance can generally provide similar results to some other normalized edit distances and may perform slightly better if the triangle inequality is violated in a particular data set.},
+	number = {6},
+	journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	author = {Yujian, Li and Bo, Liu},
+	month = jun,
+	year = {2007},
+	keywords = {Algorithms, Artificial Intelligence, Information Storage and Retrieval, Models, Statistical, Pattern Recognition, Automated, Signal processing algorithms, AESA., Biomedical signal processing, Computational biology, Cost function, Error correction, Handwriting recognition, Image Enhancement, Image Interpretation, Computer-Assisted, Image recognition, Imaging, Three-Dimensional, Information retrieval, Levenshtein distance, metric, normalized edit distance, Pattern recognition, Sequence comparison, Sequences},
+	pages = {1091--1095}
+}
+
+@inproceedings{ge_distributed_2015,
+	address = {Lille, France},
+	series = {Proceedings of {Machine} {Learning} {Research}},
+	title = {Distributed {Inference} for {Dirichlet} {Process} {Mixture} {Models}},
+	volume = {37},
+	abstract = {Bayesian nonparametric mixture models based on the Dirichlet process (DP) have been widely used for solving problems like clustering, density estimation and topic modelling. These models make weak assumptions about the underlying process that generated the observed data. Thus, when more data are collected, the complexity of these models can change accordingly. These theoretical properties often lead to superior predictive performance when compared to traditional finite mixture models. However, despite the increasing amount of data available, the application of Bayesian nonparametric mixture models is so far limited to relatively small data sets. In this paper, we propose an efficient distributed inference algorithm for the DP and the HDP mixture model. The proposed method is based on a variant of the slice sampler for DPs. Since this sampler does not involve a pre-determined truncation, the stationary distribution of the sampling algorithm is unbiased. We provide both local thread-level and distributed machine-level parallel implementations and study the performance of this sampler through an extensive set of experiments on image and text data. When compared to existing inference algorithms, the proposed method exhibits state-of-the-art accuracy and strong scalability with up to 512 cores.},
+	booktitle = {Proceedings of the 32nd {International} {Conference} on {Machine} {Learning}},
+	publisher = {PMLR},
+	author = {Ge, Hong and Chen, Yutian and Wan, Moquan and Ghahramani, Zoubin},
+	editor = {Bach, Francis and Blei, David},
+	month = jul,
+	year = {2015},
+	pages = {2276--2284}
+}
+
+@inproceedings{chang_parallel_2013,
+	address = {NY, USA},
+	series = {{NIPS}'13},
+	title = {Parallel {Sampling} of {DP} {Mixture} {Models} {Using} {Sub}-clusters {Splits}},
+	volume = {1},
+	booktitle = {Proceedings of the 26th {International} {Conference} on {Neural} {Information} {Processing} {Systems}},
+	publisher = {Curran Associates Inc.},
+	author = {Chang, Jason and Fisher, III, John W.},
+	year = {2013},
+	pages = {620--628}
+}
+
+@inproceedings{williamson_parallel_2013,
+	address = {Atlanta, Georgia, USA},
+	series = {Proceedings of {Machine} {Learning} {Research}},
+	title = {Parallel {Markov} {Chain} {Monte} {Carlo} for {Nonparametric} {Mixture} {Models}},
+	volume = {28},
+	abstract = {Nonparametric mixture models based on the Dirichlet process are an elegant alternative to finite models when the number of underlying components is unknown, but inference in such models can be slow. Existing attempts to parallelize inference in such models have relied on introducing approximations, which can lead to inaccuracies in the posterior estimate. In this paper, we describe auxiliary variable representations for the Dirichlet process and the hierarchical Dirichlet process that allow us to perform MCMC using the correct equilibrium distribution, in a distributed manner. We show that our approach allows scalable inference without the deterioration in estimate quality that accompanies existing methods.},
+	booktitle = {Proceedings of the 30th {International} {Conference} on {Machine} {Learning}},
+	publisher = {PMLR},
+	author = {Williamson, Sinead and Dubey, Avinava and Xing, Eric},
+	editor = {Dasgupta, Sanjoy and McAllester, David},
+	month = jun,
+	year = {2013},
+	pages = {98--106}
+}
+
+@inproceedings{zanella_flexible_2016,
+	address = {NY, USA},
+	series = {{NIPS}'16},
+	title = {Flexible {Models} for {Microclustering} with {Application} to {Entity} {Resolution}},
+	isbn = {978-1-5108-3881-9},
+	booktitle = {Proceedings of the 30th {International} {Conference} on {Neural} {Information} {Processing} {Systems}},
+	publisher = {Curran Associates Inc.},
+	author = {Zanella, Giacomo and Betancourt, Brenda and Wallach, Hanna and Miller, Jeffrey and Zaidi, Abbas and Steorts, Rebecca C.},
+	year = {2016},
+	pages = {1425--1433}
+}
+
+@inproceedings{steorts_performance_2017,
+	address = {Fort Lauderdale, FL, USA},
+	series = {Proceedings of {Machine} {Learning} {Research}},
+	title = {Performance {Bounds} for {Graphical} {Record} {Linkage}},
+	volume = {54},
+	abstract = {Record linkage involves merging records in large, noisy databases to remove duplicate entities. It has become an important area because of its widespread occurrence in bibliometrics, public health, official statistics production, political science, and beyond. Traditional linkage methods directly linking records to one another are computationally infeasible as the number of records grows. As a result, it is increasingly common for researchers to treat linkage as a clustering task, in which each latent entity is associated with one or more noisy database records. We critically assess performance bounds using the Kullback-Leibler (KL) divergence under a Bayesian record linkage framework, making connections to Kolchin partition models. We provide an upper bound using the KL divergence and a lower bound on the minimum probability of misclassifying a latent entity. We give insights for when our bounds hold using simulated data and provide practical user guidance.},
+	booktitle = {Proceedings of the 20th {International} {Conference} on {Artificial} {Intelligence} and {Statistics}},
+	publisher = {PMLR},
+	author = {Steorts, Rebecca C. and Barnes, Mattew and Neiswanger, Willie},
+	editor = {Singh, Aarti and Zhu, Jerry},
+	month = apr,
+	year = {2017},
+	pages = {298--306}
+}
+
+@article{vinh_information_2010,
+	title = {Information theoretic measures for clusterings comparison: {Variants}, properties, normalization and correction for chance},
+	volume = {11},
+	shorttitle = {Information theoretic measures for clusterings comparison},
+	number = {Oct},
+	journal = {Journal of Machine Learning Research},
+	author = {Vinh, Nguyen Xuan and Epps, Julien and Bailey, James},
+	month = oct,
+	year = {2010},
+	pages = {2837--2854}
+}
+
+@article{tierney_markov_1994,
+	title = {Markov {Chains} for {Exploring} {Posterior} {Distributions}},
+	volume = {22},
+	issn = {0090-5364, 2168-8966},
+	doi = {10.1214/aos/1176325750},
+	abstract = {Several Markov chain methods are available for sampling from a posterior distribution. Two important examples are the Gibbs sampler and the Metropolis algorithm. In addition, several strategies are available for constructing hybrid algorithms. This paper outlines some of the basic methods and strategies and discusses some related theoretical and practical issues. On the theoretical side, results from the theory of general state space Markov chains can be used to obtain convergence rates, laws of large numbers and central limit theorems for estimates obtained from Markov chain methods. These theoretical results can be used to guide the construction of more efficient algorithms. For the practical use of Markov chain methods, standard simulation methodology provides several variance reduction techniques and also give guidance on the choice of sample size and allocation.},
+	language = {EN},
+	number = {4},
+	journal = {The Annals of Statistics},
+	author = {Tierney, Luke},
+	month = dec,
+	year = {1994},
+	mrnumber = {MR1329166},
+	zmnumber = {0829.62080},
+	keywords = {62-04, Gibbs sampler, Metropolis-Hastings algorithm, Monte Carlo, variance reduction},
+	pages = {1701--1728}
+}
+
+@inproceedings{wallach_alternative_2010,
+	address = {Chia Laguna Resort, Sardinia, Italy},
+	series = {Proceedings of {Machine} {Learning} {Research}},
+	title = {An {Alternative} {Prior} {Process} for {Nonparametric} {Bayesian} {Clustering}},
+	volume = {9},
+	abstract = {Prior distributions play a crucial role in Bayesian approaches to clustering. Two commonly-used prior distributions are the Dirichlet and Pitman-Yor processes. In this paper, we investigate the predictive probabilities that underlie these processes, and the implicit “rich-get-richer” characteristic of the resulting partitions. We explore an alternative prior for nonparametric Bayesian clustering, the uniform process, for applications where the “rich-get-richer” property is undesirable. We also explore the cost of this new process: partitions are no longer exchangeable with respect to the ordering of variables. We present new asymptotic and simulation-based results for the clustering characteristics of the uniform process and compare these with known results for the Dirichlet and Pitman-Yor processes. Finally, we compare performance on a real document clustering task, demonstrating the practical advantage of the uniform process despite its lack of exchangeability over orderings.},
+	booktitle = {Proceedings of the {Thirteenth} {International} {Conference} on {Artificial} {Intelligence} and {Statistics}},
+	publisher = {PMLR},
+	author = {Wallach, Hanna and Jensen, Shane and Dicker, Lee and Heller, Katherine},
+	editor = {Teh, Yee Whye and Titterington, Mike},
+	month = may,
+	year = {2010},
+	pages = {892--899}
+}
+
+@article{gnedin_exchangeable_2006,
+	title = {Exchangeable {Gibbs} partitions and {Stirling} triangles},
+	volume = {138},
+	issn = {1072-3374, 1573-8795},
+	doi = {10.1007/s10958-006-0335-z},
+	abstract = {For two collections of nonnegative and suitably normalized weights W = (Wj) and V = (Vn,k), a probability distribution on the set of partitions of the set \{1, …, n\} is defined by assigning to a generic partition \{Aj, j ≤ k\} the probability Vn,k Vn,kW{\textbar}A1{\textbar}⋯W{\textbar}Ak{\textbar}Vn,kW{\textbar}A1{\textbar}⋯W{\textbar}Ak{\textbar}V\_\{n,k\} W\_\{{\textbackslash}left{\textbar} \{A\_1 \} {\textbackslash}right{\textbar}\} {\textbackslash}cdots W\_\{{\textbackslash}left{\textbar} \{A\_k \} {\textbackslash}right{\textbar}\} , where {\textbar}Aj{\textbar} is the number of elements of Aj. We impose constraints on the weights by assuming that the resulting random partitions Π n of [n] are consistent as n varies, meaning that they define an exchangeable partition of the set of all natural numbers. This implies that the weights W must be of a very special form depending on a single parameter α ∈ [− ∞, 1]. The case α = 1 is trivial, and for each value of α ≠ = 1 the set of possible V-weights is an infinite-dimensional simplex. We identify the extreme points of the simplex by solving the boundary problem for a generalized Stirling triangle. In particular, we show that the boundary is discrete for − ∞ ≤ α {\textless} 0 and continuous for 0 ≤ α {\textless} 1. For α ≤ 0 the extremes correspond to the members of the Ewens-Pitman family of random partitions indexed by (α,θ), while for 0 {\textless} α {\textless} 1 the extremes are obtained by conditioning an (α,θ)-partition on the asymptotics of the number of blocks of Πn as n tends to infinity. Bibliography: 29 titles.},
+	language = {en},
+	number = {3},
+	journal = {Journal of Mathematical Sciences},
+	author = {Gnedin, Alexander and Pitman, Jim},
+	month = oct,
+	year = {2006},
+	pages = {5674--5685}
+}
+
+@article{buntine_bayesian_2010,
+	title = {A {Bayesian} {View} of the {Poisson}-{Dirichlet} {Process}},
+	abstract = {The two parameter Poisson-Dirichlet Process (PDP), a generalisation of the Dirichlet Process, is increasingly being used for probabilistic modelling in discrete areas such as language technology, bioinformatics, and image analysis. There is a rich literature about the PDP and its derivative distributions such as the Chinese Restaurant Process (CRP). This article reviews some of the basic theory and then the major results needed for Bayesian modelling of discrete problems including details of priors, posteriors and computation. The PDP allows one to build distributions over countable partitions. The PDP has two other remarkable properties: first it is partially conjugate to itself, which allows one to build hierarchies of PDPs, and second using a marginalised relative the CRP, one gets fragmentation and clustering properties that lets one layer partitions to build trees. This article presents the basic theory for understanding the notion of partitions and distributions over them, the PDP and the CRP, and the important properties of conjugacy, fragmentation and clustering, as well as some key related properties such as consistency and convergence. This article also presents a Bayesian interpretation of the Poisson-Dirichlet process based on an improper and infinite dimensional Dirichlet distribution. This means we can understand the process as just another Dirichlet and thus all its sampling properties emerge naturally. The theory of PDPs is usually presented for continuous distributions (more generally referred to as non-atomic distributions), however, when applied to discrete distributions its remarkable conjugacy property emerges. This context and basic results are also presented, as well as techniques for computing the second order Stirling numbers that occur in the posteriors for discrete distributions.},
+	urldate = {2018-06-07},
+	journal = {arXiv:1007.0296 [cs, math, stat]},
+	author = {Buntine, Wray and Hutter, Marcus},
+	month = jul,
+	year = {2010},
+	note = {arXiv: 1007.0296},
+	keywords = {Computer Science - Learning, Mathematics - Statistics Theory, Mathematics - Probability},
+	annote = {Comment: 50 LaTeX pages, 10 figures, 3 tables, 1 algorithm}
+}
+
+@article{marzal_computation_1993,
+	title = {Computation of normalized edit distance and applications},
+	volume = {15},
+	issn = {0162-8828},
+	doi = {10.1109/34.232078},
+	abstract = {Given two strings X and Y over a finite alphabet, the normalized edit distance between X and Y, d(X,Y) is defined as the minimum of W(P)/L(P), where P is an editing path between X and Y, W(P) is the sum of the weights of the elementary edit operations of P, and L(P) is the number of these operations (length of P). It is shown that in general, d(X ,Y) cannot be computed by first obtaining the conventional (unnormalized) edit distance between X and Y and then normalizing this value by the length of the corresponding editing path. In order to compute normalized edit distances, an algorithm that can be implemented to work in O(m×n2) time and O( n2) memory space is proposed, where m and n are the lengths of the strings under consideration, and m ⩾n. Experiments in hand-written digit recognition are presented, revealing that the normalized edit distance consistently provides better results than both unnormalized or post-normalized classical edit distances},
+	number = {9},
+	journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	author = {Marzal, Andrés and Vidal, Enrique},
+	month = sep,
+	year = {1993},
+	keywords = {Error correction, normalized edit distance, Pattern recognition, Character recognition, character strings, computational complexity, finite alphabet, hand-written digit recognition, Optical character recognition software, pattern recognition, Speech recognition, words},
+	pages = {926--932}
+}
+
+@article{zanella_informed_2017,
+	title = {Informed proposals for local {MCMC} in discrete spaces},
+	abstract = {There is a lack of methodological results to design efficient Markov chain Monte Carlo (MCMC) algorithms for statistical models with discrete-valued high-dimensional parameters. Motivated by this consideration, we propose a simple framework for the design of informed MCMC proposals (i.e. Metropolis-Hastings proposal distributions that appropriately incorporate local information about the target) which is naturally applicable to both discrete and continuous spaces. We explicitly characterize the class of optimal proposal distributions under this framework, which we refer to as locally-balanced proposals, and prove their Peskun-optimality in high-dimensional regimes. The resulting algorithms are straightforward to implement in discrete spaces and provide orders of magnitude improvements in efficiency compared to alternative MCMC schemes, including discrete versions of Hamiltonian Monte Carlo. Simulations are performed with both simulated and real datasets, including a detailed application to Bayesian record linkage. A direct connection with gradient-based MCMC suggests that locally-balanced proposals may be seen as a natural way to extend the latter to discrete spaces.},
+	urldate = {2018-06-07},
+	journal = {arXiv:1711.07424 [math, stat]},
+	author = {Zanella, Giacomo},
+	month = nov,
+	year = {2017},
+	note = {arXiv: 1711.07424},
+	keywords = {Statistics - Computation, Mathematics - Probability},
+	annote = {Comment: 20 pages + 14 pages of supplementary, 10 figures}
+}
+
+@article{dyk_partially_2008,
+	title = {Partially {Collapsed} {Gibbs} {Samplers}},
+	volume = {103},
+	issn = {0162-1459},
+	doi = {10.1198/016214508000000409},
+	abstract = {Ever-increasing computational power, along with ever–more sophisticated statistical computing techniques, is making it possible to fit ever–more complex statistical models. Among the more computationally intensive methods, the Gibbs sampler is popular because of its simplicity and power to effectively generate samples from a high-dimensional probability distribution. Despite its simple implementation and description, however, the Gibbs sampler is criticized for its sometimes slow convergence, especially when it is used to fit highly structured complex models. Here we present partially collapsed Gibbs sampling strategies that improve the convergence by capitalizing on a set of functionally incompatible conditional distributions. Such incompatibility generally is avoided in the construction of a Gibbs sampler, because the resulting convergence properties are not well understood. We introduce three basic tools (marginalization, permutation, and trimming) that allow us to transform a Gibbs sampler into a partially collapsed Gibbs sampler with known stationary distribution and faster convergence.},
+	number = {482},
+	urldate = {2018-06-07},
+	journal = {Journal of the American Statistical Association},
+	author = {van Dyk, David A. and Park, Taeyoung},
+	month = jun,
+	year = {2008},
+	keywords = {Gibbs sampler, Blocking, Incompatible Gibbs sampler, Marginal data augmentation, Rate of convergence},
+	pages = {790--796}
+}
+
+@article{vose_linear_1991,
+	title = {A linear algorithm for generating random numbers with a given distribution},
+	volume = {17},
+	issn = {0098-5589},
+	doi = {10.1109/32.92917},
+	abstract = {Let ξ be a random variable over a finite set with an arbitrary probability distribution. Improvements to a fast method of generating sample values for ξ in constant time are suggested. The proposed modification reduces the time required for initialization to O( n). For a simple genetic algorithm, this improvement changes an O(g n 1n n) algorithm into an O(g n) algorithm (where g is the number of generations, and n is the population size)},
+	number = {9},
+	journal = {IEEE Transactions on Software Engineering},
+	author = {Vose, Michael D.},
+	month = sep,
+	year = {1991},
+	keywords = {Computational modeling, Computer science, Genetic algorithms, Probability distribution, probability, arbitrary probability distribution, finite set, genetic algorithms, linear algorithm, random number generation, Random number generation, random numbers, random variable, Random variables, Roundoff errors, simple genetic algorithm},
+	pages = {972--975}
+}
+
+@article{lecuyer_good_1999,
+	title = {Good {Parameters} and {Implementations} for {Combined} {Multiple} {Recursive} {Random} {Number} {Generators}},
+	volume = {47},
+	issn = {0030-364X},
+	doi = {10.1287/opre.47.1.159},
+	abstract = {Combining parallel multiple recursive sequences provides an efficient way of implementing random number generators with long periods and good structural properties. Such generators are statistically more robust than simple linear congruential generators that fit into a computer word. We made extensive computer searches for good parameter sets, with respect to the spectral test, for combined multiple recursive generators of different sizes. We also compare different implementations and give a specific code in C that is faster than previous implementations of similar generators.},
+	number = {1},
+	urldate = {2018-06-07},
+	journal = {Operations Research},
+	author = {L'Ecuyer, Pierre},
+	month = feb,
+	year = {1999},
+	pages = {159--164}
+}
+
+@inproceedings{lomeli_hybrid_2015,
+	address = {Cambridge, MA, USA},
+	series = {{NIPS}'15},
+	title = {A {Hybrid} {Sampler} for {Poisson}-{Kingman} {Mixture} {Models}},
+	volume = {2},
+	abstract = {This paper concerns the introduction of a new Markov Chain Monte Carlo scheme for posterior sampling in Bayesian nonparametric mixture models with priors that belong to the general Poisson-Kingman class. We present a novel compact way of representing the infinite dimensional component of the model such that while explicitly representing this infinite component it has less memory and storage requirements than previous MCMC schemes. We describe comparative simulation results demonstrating the efficacy of the proposed MCMC algorithm against existing marginal and conditional MCMC samplers.},
+	urldate = {2018-06-07},
+	booktitle = {Proceedings of the 28th {International} {Conference} on {Neural} {Information} {Processing} {Systems}},
+	publisher = {MIT Press},
+	author = {Lomelí, María and Favaro, Stefano and Teh, Yee Whye},
+	month = dec,
+	year = {2015},
+	pages = {2161--2169}
+}
+
+@article{steorts_entity_2015,
+	title = {Entity {Resolution} with {Empirically} {Motivated} {Priors}},
+	volume = {10},
+	issn = {1936-0975, 1931-6690},
+	doi = {10.1214/15-BA965SI},
+	abstract = {Databases often contain corrupted, degraded, and noisy data with duplicate entries across and within each database. Such problems arise in citations, medical databases, genetics, human rights databases, and a variety of other applied settings. The target of statistical inference can be viewed as an unsupervised problem of determining the edges of a bipartite graph that links the observed records to unobserved latent entities. Bayesian approaches provide attractive benefits, naturally providing uncertainty quantification via posterior probabilities. We propose a novel record linkage approach based on empirical Bayesian principles. Specifically, the empirical Bayesian-type step consists of taking the empirical distribution function of the data as the prior for the latent entities. This approach improves on the earlier HB approach not only by avoiding the prior specification problem but also by allowing both categorical and string-valued variables. Our extension to string-valued variables also involves the proposal of a new probabilistic mechanism by which observed record values for string fields can deviate from the values of their associated latent entities. Categorical fields that deviate from their corresponding true value are simply drawn from the empirical distribution function. We apply our proposed methodology to a simulated data set of German names and an Italian household survey on income and wealth, showing our method performs favorably compared to several standard methods in the literature. We also consider the robustness of our methods to changes in the hyper-parameters.},
+	language = {EN},
+	number = {4},
+	journal = {Bayesian Analysis},
+	author = {Steorts, Rebecca C.},
+	month = dec,
+	year = {2015},
+	mrnumber = {MR3432242},
+	zmnumber = {1335.62023},
+	pages = {849--875}
+}
+
+@incollection{bhattacharya_latent_2006,
+	series = {Proceedings},
+	title = {A {Latent} {Dirichlet} {Model} for {Unsupervised} {Entity} {Resolution}},
+	isbn = {978-0-89871-611-5},
+	abstract = {Entity resolution has received considerable attention in recent years. Given many references to underlying entities, the goal is to predict which references correspond to the same entity. We show how to extend the Latent Dirichlet Allocation model for this task and propose a probabilistic model for collective entity resolution for relational domains where references are connected to each other. Our approach differs from other recently proposed entity resolution approaches in that it is a) generative, b) does not make pair-wise decisions and c) captures relations between entities through a hidden group variable. We propose a novel sampling algorithm for collective entity resolution which is unsupervised and also takes entity relations into account. Additionally, we do not assume the domain of entities to be known and show how to infer the number of entities from the data. We demonstrate the utility and practicality of our relational entity resolution approach for author resolution in two real-world bibliographic datasets. In addition, we present preliminary results on characterizing conditions under which relational information is useful.},
+	urldate = {2018-06-13},
+	booktitle = {Proceedings of the 2006 {SIAM} {International} {Conference} on {Data} {Mining}},
+	publisher = {Society for Industrial and Applied Mathematics},
+	author = {Bhattacharya, Indrajit and Getoor, Lise},
+	month = apr,
+	year = {2006},
+	doi = {10.1137/1.9781611972764.5},
+	pages = {47--58}
+}
+
+@article{sadinle_bayesian_2017,
+	title = {Bayesian {Estimation} of {Bipartite} {Matchings} for {Record} {Linkage}},
+	volume = {112},
+	issn = {0162-1459},
+	doi = {10.1080/01621459.2016.1148612},
+	abstract = {The bipartite record linkage task consists of merging two disparate datafiles containing information on two overlapping sets of entities. This is nontrivial in the absence of unique identifiers and it is important for a wide variety of applications given that it needs to be solved whenever we have to combine information from different sources. Most statistical techniques currently used for record linkage are derived from a seminal article by Fellegi and Sunter in 1969. These techniques usually assume independence in the matching statuses of record pairs to derive estimation procedures and optimal point estimators. We argue that this independence assumption is unreasonable and instead target a bipartite matching between the two datafiles as our parameter of interest. Bayesian implementations allow us to quantify uncertainty on the matching decisions and derive a variety of point estimators using different loss functions. We propose partial Bayes estimates that allow uncertain parts of the bipartite matching to be left unresolved. We evaluate our approach to record linkage using a variety of challenging scenarios and show that it outperforms the traditional methodology. We illustrate the advantages of our methods merging two datafiles on casualties from the civil war of El Salvador. Supplementary materials for this article are available online.},
+	number = {518},
+	urldate = {2018-06-13},
+	journal = {Journal of the American Statistical Association},
+	author = {Sadinle, Mauricio},
+	month = apr,
+	year = {2017},
+	keywords = {Assignment problem, Bayes estimate, Data matching, Fellegi–Sunter decision rule, Mixture model, Reject option},
+	pages = {600--612}
+}
+
+@article{tancredi_hierarchical_2011,
+	title = {A hierarchical {Bayesian} approach to record linkage and population size problems},
+	volume = {5},
+	issn = {1932-6157, 1941-7330},
+	doi = {10.1214/10-AOAS447},
+	abstract = {We propose and illustrate a hierarchical Bayesian approach for matching statistical records observed on different occasions. We show how this model can be profitably adopted both in record linkage problems and in capture–recapture setups, where the size of a finite population is the real object of interest. There are at least two important differences between the proposed model-based approach and the current practice in record linkage. First, the statistical model is built up on the actually observed categorical variables and no reduction (to 0–1 comparisons) of the available information takes place. Second, the hierarchical structure of the model allows a two-way propagation of the uncertainty between the parameter estimation step and the matching procedure so that no plug-in estimates are used and the correct uncertainty is accounted for both in estimating the population size and in performing the record linkage. We illustrate and motivate our proposal through a real data example and simulations.},
+	language = {EN},
+	number = {2B},
+	urldate = {2018-06-13},
+	journal = {The Annals of Applied Statistics},
+	author = {Tancredi, Andrea and Liseo, Brunero},
+	month = jun,
+	year = {2011},
+	mrnumber = {MR2849786},
+	zmnumber = {1223.62015},
+	keywords = {Gibbs sampling, record linkage, Capture–recapture methods, conditional independence, Metropolis–Hastings},
+	pages = {1553--1585}
+}
+
+@article{gutman_bayesian_2013,
+	title = {A {Bayesian} {Procedure} for {File} {Linking} to {Analyze} {End}-of-{Life} {Medical} {Costs}},
+	volume = {108},
+	issn = {0162-1459},
+	doi = {10.1080/01621459.2012.726889},
+	abstract = {End-of-life medical expenses are a significant proportion of all health care expenditures. These costs were studied using costs of services from Medicare claims and cause of death (CoD) from death certificates. In the absence of a unique identifier linking the two datasets, common variables identified unique matches for only 33\% of deaths. The remaining cases formed cells with multiple cases (32\% in cells with an equal number of cases from each file and 35\% in cells with an unequal number). We sampled from the joint posterior distribution of model parameters and the permutations that link cases from the two files within each cell. The linking models included the regression of location of death on CoD and other parameters, and the regression of cost measures with a monotone missing data pattern on CoD and other demographic characteristics. Permutations were sampled by enumerating the exact distribution for small cells and by the Metropolis algorithm for large cells. Sparse matrix data structures enabled efficient calculations despite the large dataset (≈1.7 million cases). The procedure generates m datasets in which the matches between the two files are imputed. The m datasets can be analyzed independently and results can be combined using Rubin’s multiple imputation rules. Our approach can be applied in other file-linking applications. Supplementary materials for this article are available online.},
+	number = {501},
+	urldate = {2018-06-13},
+	journal = {Journal of the American Statistical Association},
+	author = {Gutman, Roee and Afendulis, Christopher C. and Zaslavsky, Alan M.},
+	month = mar,
+	year = {2013},
+	pmid = {23645944},
+	keywords = {Administrative data, Bayesian analysis, Missing data, Record linkage, Statistical matching},
+	pages = {34--47}
+}
+
+@article{bentley_multidimensional_1975,
+	title = {Multidimensional {Binary} {Search} {Trees} {Used} for {Associative} {Searching}},
+	volume = {18},
+	issn = {0001-0782},
+	doi = {10.1145/361002.361007},
+	abstract = {This paper develops the multidimensional binary search tree (or k-d tree, where k is the dimensionality of the search space) as a data structure for storage of information to be retrieved by associative searches. The k-d tree is defined and examples are given. It is shown to be quite efficient in its storage requirements. A significant advantage of this structure is that a single data structure can handle many types of queries very efficiently. Various utility algorithms are developed; their proven average running times in an n record file are: insertion, O(log n); deletion of the root, O(n(k-1)/k); deletion of a random node, O(log n); and optimization (guarantees logarithmic performance of searches), O(n log n). Search algorithms are given for partial match queries with t keys specified [proven maximum running time of O(n(k-t)/k)] and for nearest neighbor queries [empirically observed average running time of O(log n).] These performances far surpass the best currently known algorithms for these tasks. An algorithm is presented to handle any general intersection query. The main focus of this paper is theoretical. It is felt, however, that k-d trees could be quite useful in many applications, and examples of potential uses are given.},
+	number = {9},
+	urldate = {2018-06-21},
+	journal = {Commun. ACM},
+	author = {Bentley, Jon Louis},
+	month = sep,
+	year = {1975},
+	keywords = {associative retrieval, attribute, binary search trees, binary tree insertion, information retrieval system, intersection queries, key, nearest neighbor queries, partial match queries},
+	pages = {509--517}
+}
+
+@article{friedman_algorithm_1977,
+	title = {An {Algorithm} for {Finding} {Best} {Matches} in {Logarithmic} {Expected} {Time}},
+	volume = {3},
+	issn = {0098-3500},
+	doi = {10.1145/355744.355745},
+	number = {3},
+	urldate = {2018-06-21},
+	journal = {ACM Trans. Math. Softw.},
+	author = {Friedman, Jerome H. and Bentley, Jon Louis and Finkel, Raphael Ari},
+	month = sep,
+	year = {1977},
+	pages = {209--226}
+}
+
+@misc{liseo_2013,
+	Author = {Liseo, Brunero and Tancredi, Andrea},
+	Date-Modified = {2013-05-30 04:51:43 +0000},
+	Title = {Some advances on {B}ayesian record linkage and inference for linked data},
+	Url = {http://www.ine.es/e/essnetdi_ws2011/ppts/Liseo_Tancredi.pdf},
+	Year = 2013,
+	Bdsk-Url-1 = {http://www.ine.es/e/essnetdi_ws2011/ppts/Liseo_Tancredi.pdf}
+}
+	
+@misc{winkler_2000,
+	Author = {Winkler, William E.},
+	Date-Modified = {2013-05-31 02:23:04 +0000},
+	Howpublished = {American Statistical Association, Proceedings of the Section on Survey Research Methods, 20--29},
+	Title = {Machine Learning, Information Retrieval, and Record Linkage},
+	Url = {http://www.niss.org/affiliates/dqworkshop/papers/winkler.pdf},
+	Year = 2000,
+	Bdsk-Url-1 = {http://www.niss.org/affiliates/dqworkshop/papers/winkler.pdf}
+}
+
+@article{lahiri_2005,
+	Author = {Lahiri, P. and Larsen, M.},
+	Journal = {Journal of the American Statistical Association},
+	Number = {469},
+	Pages = {222-230},
+	Title = {Regression Analysis With Linked Data},
+	Volume = {100},
+	Year = {2005}
+}
+	
+
+@article{fortini_bayesian_2001,
+  author = {Fortini, M. and Liseo, B. and Nuccitelli, A. and Scanu, M.},
+  title = {{On Bayesian Record Linkage}},
+  journal = {Research in Official Statistics},
+  year = {2001},
+  number = {1},
+  volume = {4},
+  pages = {185--198},
+  url = {https://op.europa.eu/en/publication-detail/-/publication/608fb041-c2ff-4457-9487-647a1e02b863}
+}
+
+@article{larsen_experiment_2012,
+  title={An experiment with hierarchical {Bayesian} record linkage},
+  author={Larsen, Michael D.},
+  journal={arXiv preprint arXiv:1212.5203},
+  year={2012},
+  primaryClass={math.ST}
+}
+
+@PHDTHESIS{Matsakis10,
+  AUTHOR =       {Nicholas Elias Matsakis},
+  TITLE =        {{Active Duplicate Detection with Bayesian Nonparametric Models}},
+  SCHOOL =      {Massachusetts Institute of Technology},
+  YEAR =         {2010},
+  ADDRESS =   {}
+}
+
+	
+@article{christen_2012,
+  title={A survey of indexing techniques for scalable record linkage and deduplication},
+  author={Christen, Peter},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  volume={24},
+  number={9},
+  pages={1537--1555},
+  year={2012},
+  publisher={IEEE}
+}
+	
+
+@book{Herzog_2007,
+	Address = {New York},
+	Author = {Herzog, T.N. and Scheuren, F.J. and Winkler, W.E.},
+	Date-Added = {2013-05-30 03:49:33 +0000},
+	Date-Modified = {2013-05-30 03:51:42 +0000},
+	Publisher = {Springer},
+	Title = {Data Quality and Record Linkage Techniques},
+	Year = {2007}
+}
+
+@article{belin_1995,
+	title = {A {Method} for {Calibrating} {False}-{Match} {Rates} in {Record} {Linkage}},
+	volume = {90},
+	issn = {0162-1459},
+	doi = {10.2307/2291082},
+	abstract = {Specifying a record-linkage procedure requires both (1) a method for measuring closeness of agreement between records, typically a scalar weight, and (2) a rule for deciding when to classify records as matches or nonmatches based on the weights. Here we outline a general strategy for the second problem, that is, for accurately estimating false-match rates for each possible cutoff weight. The strategy uses a model where the distribution of observed weights are viewed as a mixture of weights for true matches and weights for false matches. An EM algorithm for fitting mixtures of transformed-normal distributions is used to find posterior modes; associated posterior variability is due to uncertainty about specific normalizing transformations as well as uncertainty in the parameters of the mixture model, the latter being calculated using the SEM algorithm. This mixture-model calibration method is shown to perform well in an applied setting with census data. Further, a simulation experiment reveals that, across a wide variety of settings not satisfying the model's assumptions, the procedure is slightly conservative on average in the sense of overstating false-match rates, and the one-sided confidence coverage (i.e., the proportion of times that these interval estimates cover or overstate the actual false-match rate) is very close to the nominal rate.},
+	number = {430},
+	journal = {Journal of the American Statistical Association},
+	author = {Belin, Thomas R. and Rubin, Donald B.},
+	year = {1995},
+	pages = {694--707}
+}
+
+@article{larsen_2001,
+	title = {Iterative {Automated} {Record} {Linkage} {Using} {Mixture} {Models}},
+	volume = {96},
+	issn = {0162-1459},
+	doi = {10.1198/016214501750332956},
+	abstract = {The goal of record linkage is to link quickly and accurately records that correspond to the same person or entity. Whereas certain patterns of agreements and disagreements on variables are more likely among records pertaining to a single person than among records for different people, the observed patterns for pairs of records can be viewed as arising from a mixture of matches and nonmatches. Mixture model estimates can be used to partition record pairs into two or more groups that can be labeled as probable matches (links) and probable nonmatches (nonlinks). A method is proposed and illustrated that uses marginal information in the database to select mixture models, identifies sets of records for clerks to review based on the models and marginal information, incorporates clerically reviewed data, as they become available, into estimates of model parameters, and classifies pairs as links, nonlinks, or in need of further clerical review. The procedure is illustrated with five datasets from the U.S. Bureau of the Census. It appears to be robust to variations in record-linkage sites. The clerical review corrects classifications of some pairs directly and leads to changes in classification of others through reestimation of mixture models.},
+	number = {453},
+	urldate = {2018-07-19},
+	journal = {Journal of the American Statistical Association},
+	author = {Larsen, Michael D. and Rubin, Donald B.},
+	month = mar,
+	year = {2001},
+	pages = {32--41}
+}
+
+@inproceedings{domingos_2004,
+  title={Multi-relational record linkage},
+  author={Domingos, Parag and Domingos, Pedro},
+  booktitle={Proceedings of the KDD-2004 Workshop on Multi-Relational Data Mining},
+  year={2004},
+  organization={ACM}
+}
+
+	
+@INPROCEEDINGS{Larsen02,
+  AUTHOR =       {Larsen, Michael D.},
+  TITLE =        {{Comments on Hierarchical Bayesian Record Linkage}},
+  BOOKTITLE =    {Proceedings of the Joint Statistical Meetings, Section on Survey Research Methods},
+  YEAR =         {2002},
+  ORGANIZATION = {The American Statistical Association},
+  PAGES =	 {1995--2000},
+  MONTH =	 {},
+} 
+
+@inproceedings{larsen_advances_2005,
+  author = {Larsen, Michael D.},
+  title = {{Advances in Record Linkage Theory: Hierarchical Bayesian Record Linkage Theory}},
+  booktitle = {Proceedings of the Survey Research Methods Section},
+  year = {2005},
+  publisher = {American Statistical Association},
+  pages = {3277--3284},
+  month = {},
+} 
+
+@misc{winkler_2000,
+	Author = {Winkler, William E.},
+	Date-Modified = {2013-05-31 02:23:04 +0000},
+	Howpublished = {American Statistical Association, Proceedings of the Section on Survey Research Methods, 20--29},
+	Title = {Machine Learning, Information Retrieval, and Record Linkage},
+	Url = {http://www.niss.org/affiliates/dqworkshop/papers/winkler.pdf},
+	Year = 2000,
+	Bdsk-Url-1 = {http://www.niss.org/affiliates/dqworkshop/papers/winkler.pdf}
+}
+	
+@article{murray2016probabilistic,
+  title={Probabilistic Record Linkage and Deduplication after Indexing, Blocking, and Filtering},
+  author={Murray, Jared S.},
+  journal={Journal of Privacy and Confidentiality},
+  volume={7},
+  number={1},
+  pages={3--24},
+  year={2016}
+}	
+
+@Article{steorts14smered,
+  author =       {Steorts, Rebecca C. and Hall, Rob and Fienberg, Stephen E.},
+  title =        {{SMERED}: A {B}ayesian Approach to Graphical Record Linkage and De-duplication},
+  journal =      {Journal of Machine Learning Research},
+  year =         {2014},
+  OPTkey =       {},
+  volume =       {33},
+  OPTnumber =    {},
+  pages =        {922--930},
+  OPTmonth =     {},
+  OPTnote =      {},
+  OPTannote =    {}
+}
+
+
+@techreport{winkler_overview_2006,
+	title = {Overview of record linkage and current research directions},
+	abstract = {This paper provides background on record linkage methods that can be used in combining data from a variety of sources such as person lists business lists. It also gives some areas of current research.},
+	number = {Statistics \#2006-2},
+	institution = {U.S. Bureau of the Census},
+	author = {Winkler, William E.},
+	month = feb,
+	year = {2006}
+}
+
+@techreport{winkler_state_1999,
+	title = {The {State} of {Record} {Linkage} and {Current} {Research} {Problems}},
+	abstract = {This paper provides an overview of methods and systems developed for record linkage. Modern record linkage begins with the pioneering work of Newcombe and is especially based on the formal mathematical model of Fellegi and Sunter. In their seminal work, Fellegi and Sunter introduced many powerful ideas for estimating record linkage parameters and other ideas that still influence record linkage today. Record linkage research is characterized by its synergism of statistics, computer science, and operations research. Many difficult algorithms have been developed and put in software systems. Record linkage practice is still very limited. Some limits are due to existing software. Other limits are due to the difficulty in automatically estimating matching parameters and error rates, with current research highlighted by the work of Larsen and Rubin.},
+	institution = {Statistical Research Division, U.S. Bureau of the Census},
+	author = {Winkler, William E.},
+	year = {1999}
+}
+
+@article{sadinle_detecting_2014,
+	title = {Detecting duplicates in a homicide registry using a {Bayesian} partitioning approach},
+	volume = {8},
+	issn = {1932-6157, 1941-7330},
+	doi = {10.1214/14-AOAS779},
+	abstract = {Finding duplicates in homicide registries is an important step in keeping an accurate account of lethal violence. This task is not trivial when unique identifiers of the individuals are not available, and it is especially challenging when records are subject to errors and missing values. Traditional approaches to duplicate detection output independent decisions on the coreference status of each pair of records, which often leads to nontransitive decisions that have to be reconciled in some ad-hoc fashion. The task of finding duplicate records in a data file can be alternatively posed as partitioning the data file into groups of coreferent records. We present an approach that targets this partition of the file as the parameter of interest, thereby ensuring transitive decisions. Our Bayesian implementation allows us to incorporate prior information on the reliability of the fields in the data file, which is especially useful when no training data are available, and it also provides a proper account of the uncertainty in the duplicate detection decisions. We present a study to detect killings that were reported multiple times to the United Nations Truth Commission for El Salvador.},
+	language = {EN},
+	number = {4},
+	urldate = {2018-06-26},
+	journal = {The Annals of Applied Statistics},
+	author = {Sadinle, Mauricio},
+	month = dec,
+	year = {2014},
+	mrnumber = {MR3292503},
+	zmnumber = {06408784},
+	keywords = {Deduplication, distribution on partitions, duplicate detection, entity resolution, Hispanic names, homicide records, human rights, record linkage, string similarity, United Nations Truth Commission for El Salvador},
+	pages = {2404--2434}
+}
+
+@article{fellegi_theory_1969,
+	title = {A {Theory} for {Record} {Linkage}},
+	volume = {64},
+	issn = {0162-1459},
+	doi = {10.1080/01621459.1969.10501049},
+	abstract = {A mathematical model is developed to provide a theoretical framework for a computer-oriented solution to the problem of recognizing those records in two files which represent identical persons, objects or events (said to be matched). A comparison is to be made between the recorded characteristics and values in two records (one from each file) and a decision made as to whether or not the members of the comparison-pair represent the same person or event, or whether there is insufficient evidence to justify either of these decisions at stipulated levels of error. These three decisions are referred to as link (A 1), a non-link (A 3), and a possible link (A 2). The first two decisions are called positive dispositions. The two types of error are defined as the error of the decision A 1 when the members of the comparison pair are in fact unmatched, and the error of the decision A 3 when the members of the comparison pair are, in fact matched. The probabilities of these errors are defined as and respectively where u(γ), m(γ) are the probabilities of realizing γ (a comparison vector whose components are the coded agreements and disagreements on each characteristic) for unmatched and matched record pairs respectively. The summation is over the whole comparison space r of possible realizations. A linkage rule assigns probabilities P(A 1{\textbar}γ), and P(A 2{\textbar}γ), and P(A 3{\textbar}γ) to each possible realization of γ ε Γ. An optimal linkage rule L (μ, λ, Γ) is defined for each value of (μ, λ) as the rule that minimizes P(A 2) at those error levels. In other words, for fixed levels of error, the rule minimizes the probability of failing to make positive dispositions. A theorem describing the construction and properties of the optimal linkage rule and two corollaries to the theorem which make it a practical working tool are given.},
+	number = {328},
+	urldate = {2018-06-26},
+	journal = {Journal of the American Statistical Association},
+	author = {Fellegi, Ivan P. and Sunter, Alan B.},
+	month = dec,
+	year = {1969},
+	pages = {1183--1210}
+}
+
+@article{newcombe_automatic_1959,
+	title = {Automatic {Linkage} of {Vital} {Records}: {Computers} can be used to extract "follow-up" statistics of families from files of routine records},
+	volume = {130},
+	copyright = {© 1959},
+	issn = {0036-8075, 1095-9203},
+	shorttitle = {Automatic {Linkage} of {Vital} {Records}},
+	doi = {10.1126/science.130.3381.954},
+	language = {en},
+	number = {3381},
+	urldate = {2018-06-26},
+	journal = {Science},
+	author = {Newcombe, H. B. and Kennedy, J. M. and Axford, S. J. and James, A. P.},
+	month = oct,
+	year = {1959},
+	pmid = {14426783},
+	pages = {954--959}
+}
+
+@inproceedings{steorts_comparison_2014,
+	series = {Lecture {Notes} in {Computer} {Science}},
+	title = {A {Comparison} of {Blocking} {Methods} for {Record} {Linkage}},
+	isbn = {978-3-319-11256-5 978-3-319-11257-2},
+	doi = {10.1007/978-3-319-11257-2_20},
+	abstract = {Record linkage seeks to merge databases and to remove duplicates when unique identifiers are not available. Most approaches use blocking techniques to reduce the computational complexity associated with record linkage. We review traditional blocking techniques, which typically partition the records according to a set of field attributes, and consider two variants of a method known as locality sensitive hashing, sometimes referred to as “private blocking.” We compare these approaches in terms of their recall, reduction ratio, and computational complexity. We evaluate these methods using different synthetic datafiles and conclude with a discussion of privacy-related issues.},
+	language = {en},
+	urldate = {2018-06-26},
+	booktitle = {Privacy in {Statistical} {Databases}},
+	publisher = {Springer, Cham},
+	author = {Steorts, Rebecca C. and Ventura, Samuel L. and Sadinle, Mauricio and Fienberg, Stephen E.},
+	month = sep,
+	year = {2014},
+	pages = {253--268}
+}
+
+
+@article{geman_stochastic_1984,
+	title = {Stochastic {Relaxation}, {Gibbs} {Distributions}, and the {Bayesian} {Restoration} of {Images}},
+	volume = {PAMI-6},
+	issn = {0162-8828},
+	doi = {10.1109/TPAMI.1984.4767596},
+	abstract = {We make an analogy between images and statistical mechanics systems. Pixel gray levels and the presence and orientation of edges are viewed as states of atoms or molecules in a lattice-like physical system. The assignment of an energy function in the physical system determines its Gibbs distribution. Because of the Gibbs distribution, Markov random field (MRF) equivalence, this assignment also determines an MRF image model. The energy function is a more convenient and natural mechanism for embodying picture attributes than are the local characteristics of the MRF. For a range of degradation mechanisms, including blurring, nonlinear deformations, and multiplicative or additive noise, the posterior distribution is an MRF with a structure akin to the image model. By the analogy, the posterior distribution defines another (imaginary) physical system. Gradual temperature reduction in the physical system isolates low energy states (“annealing”), or what is the same thing, the most probable states under the Gibbs distribution. The analogous operation under the posterior distribution yields the maximum a posteriori (MAP) estimate of the image given the degraded observations. The result is a highly parallel “relaxation” algorithm for MAP estimation. We establish convergence properties of the algorithm and we experiment with some simple pictures, for which good restorations are obtained at low signal-to-noise ratios.},
+	number = {6},
+	journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	author = {Geman, Stuart and Geman, Donald},
+	month = nov,
+	year = {1984},
+	keywords = {Bayesian methods, Markov random fields, Stochastic processes, Additive noise, Annealing, Deformable models, Degradation, Energy states, Gibbs distribution, image restoration, Image restoration, line process, MAP estimate, Markov random field, relaxation, scene modeling, spatial degradation, Temperature distribution},
+	pages = {721--741}
+}
+
+@article{sariyar_recordlinkage_2010,
+	title = {The {RecordLinkage} {Package}: {Detecting} {Errors} in {Data}},
+	volume = {2},
+	issn = {2073-4859},
+	abstract = {Record linkage deals with detecting homonyms and mainly synonyms in data. The package RecordLinkage provides means to perform and evaluate different record linkage methods. A stochastic framework is implemented which calculates weights through an EM algorithm. The determination of the necessary thresholds in this model can be achieved by tools of extreme value theory. Furthermore, machine learning methods are utilized, including decision trees (rpart), bootstrap aggregating (bagging), ada boost (ada), neural nets (nnet) and support vector machines (svm). The generation of record pairs and comparison patterns from single data items are provided as well. Comparison patterns can be chosen to be binary or based on some string metrics. In order to reduce computation time and memory usage, blocking can be used. Future development will concentrate on additional and reﬁned methods, performance improvements and input/output facilities needed for real-world application.},
+	language = {en},
+	number = {2},
+	journal = {The R Journal},
+	author = {Sariyar, Murat and Borg, Andreas},
+	month = dec,
+	year = {2010},
+	pages = {61--67}
+}
+
+@book{liu_monte_2004,
+  address = {New York},
+  series = {Springer {Series} in {Statistics}},
+  title = {Monte {Carlo} {Strategies} in {Scientific} {Computing}},
+  isbn = {978-0-387-76369-9},
+  abstract = {This paperback edition is a reprint of the 2001 Springer edition. This book provides a self-contained and up-to-date treatment of the Monte Carlo method and develops a common framework under which various Monte Carlo techniques can be "standardized" and compared. Given the interdisciplinary nature of the topics and a moderate prerequisite for the reader, this book should be of interest to a broad audience of quantitative researchers such as computational biologists, computer scientists, econometricians, engineers, probabilists, and statisticians. It can also be used as the textbook for a graduate-level course on Monte Carlo methods. Many problems discussed in the alter chapters can be potential thesis topics for masters’ or Ph.D. students in statistics or computer science departments. Jun Liu is Professor of Statistics at Harvard University, with a courtesy Professor appointment at Harvard Biostatistics Department. Professor Liu was the recipient of the 2002 COPSS Presidents' Award, the most prestigious one for statisticians and given annually by five leading statistical associations to one individual under age 40. He was selected as a Terman Fellow by Stanford University in 1995, as a Medallion Lecturer by the Institute of Mathematical Statistics (IMS) in 2002, and as a Bernoulli Lecturer by the International Bernoulli Society in 2004. He was elected to the IMS Fellow in 2004 and Fellow of the American Statistical Association in 2005. He and co-workers have published more than 130 research articles and book chapters on Bayesian modeling and computation, bioinformatics, genetics, signal processing, stochastic dynamic systems, Monte Carlo methods, and theoretical statistics. "An excellent survey of current Monte Carlo methods. The applications amply demonstrate the relevance of this approach to modern computing. The book is highly recommended." (Mathematical Reviews) "This book provides comprehensive coverage of Monte Carlo methods, and in the process uncovers and discusses commonalities among seemingly disparate techniques that arose in various areas of application. … The book is well organized; the flow of topics follows a logical development. … The coverage is up-to-date and comprehensive, and so the book is a good resource for people conducting research on Monte Carlo methods. … The book would be an excellent supplementary text for a course in scientific computing … ." (SIAM Review) "The strength of this book is in bringing together advanced Monte Carlo (MC) methods developed in many disciplines. … Throughout the book are examples of techniques invented, or reinvented, in different fields that may be applied elsewhere. … Those interested in using MC to solve difficult problems will find many ideas, collected from a variety of disciplines, and references for further study." (Technometrics)},
+  language = {en},
+  publisher = {Springer-Verlag},
+  author = {Liu, Jun S.},
+  year = {2004}
+}
+
+
+@article{vats_multivariate_2015,
+	title = {Multivariate {Output} {Analysis} for {Markov} chain {Monte} {Carlo}},
+	url = {http://arxiv.org/abs/1512.07713},
+	abstract = {Markov chain Monte Carlo (MCMC) produces a correlated sample for estimating expectations with respect to a target distribution. A fundamental question is when should sampling stop so that we have good estimates of the desired quantities? The key to answering this question lies in assessing the Monte Carlo error through a multivariate Markov chain central limit theorem (CLT). The multivariate nature of this Monte Carlo error largely has been ignored in the MCMC literature. We present a multivariate framework for terminating simulation in MCMC. We define a multivariate effective sample size, estimating which requires strongly consistent estimators of the covariance matrix in the Markov chain CLT; a property we show for the multivariate batch means estimator. We then provide a lower bound on the number of minimum effective samples required for a desired level of precision. This lower bound depends on the problem only in the dimension of the expectation being estimated, and not on the underlying stochastic process. This result is obtained by drawing a connection between terminating simulation via effective sample size and terminating simulation using a relative standard deviation fixed-volume sequential stopping rule; which we demonstrate is an asymptotically valid procedure. The finite sample properties of the proposed method are demonstrated in a variety of examples.},
+	urldate = {2018-06-29},
+	journal = {arXiv:1512.07713 [math, stat]},
+	author = {Vats, Dootika and Flegal, James M. and Jones, Galin L.},
+	month = dec,
+	year = {2015},
+	note = {arXiv: 1512.07713},
+	keywords = {Mathematics - Statistics Theory, Statistics - Computation}
+}
+
+@techreport{winkler_methods_2002,
+    title = {Methods for {Record Linkage} and {Bayesian Networks}},
+    number = {Statistics \#2002-05},
+    author = {Winkler, William E.},
+    year = {2002},
+  	institution = {U.S. Bureau of the Census},
+}
+
+@techreport{enamorado_using_2017,
+  title = {Using a probabilistic model to assist merging of large-scale administrative records},
+  author = {Enamorado, Ted and Fifield, Benjamin and Imai, Kosuke},
+  year = {2017},
+  institution = {{Department of Politics}, {Princeton University}}
+}
+
+@misc{manton_nltcs_2010,
+    title = {{National} {Long-Term} {Care} {Survey}: 1982, 1984, 1989, 1994, 1999 and 2004},
+    author = {Manton, Kenneth G.},
+    year = {2010},
+    month = jun,
+    doi = {10.3886/ICPSR09681.v5},
+    publisher = {{Inter-University} {Consortium} for {Political} and {Social} {Research}},
+    location = {Ann Arbor, MI}
+}
+
+@techreport{christen_preparation_2014,
+	title = {Preparation of a real temporal voter data set for record linkage and duplicate detection research},
+	institution = {Australian National University},
+	author = {Christen, Peter},
+	year = {2014}
+}
+
+@misc{bancaitalia_2010,
+  title = {Bank of Italy -- Survey on Household Income and Wealth},
+  author = {{Banca d'Italia}},
+  year = {n.d.},
+  howpublished = {\url{http://www.bancaditalia.it/pubblicazioni/indagine-famiglie/index.html}},
+  note = {Accessed: 9 March 2018}
+}
+
+
+@article{zaharia_apache_2016,
+ author = {Zaharia, Matei and Xin, Reynold S. and Wendell, Patrick and Das, Tathagata and Armbrust, Michael and Dave, Ankur and Meng, Xiangrui and Rosen, Josh and Venkataraman, Shivaram and Franklin, Michael J. and Ghodsi, Ali and Gonzalez, Joseph and Shenker, Scott and Stoica, Ion},
+ title = {Apache Spark: A Unified Engine for Big Data Processing},
+ journal = {Commun. ACM},
+ issue_date = {November 2016},
+ volume = {59},
+ number = {11},
+ month = oct,
+ year = {2016},
+ issn = {0001-0782},
+ pages = {56--65},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/2934664},
+ doi = {10.1145/2934664},
+ acmid = {2934664},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+
+@article{jasra_markov_2005,
+	title = {Markov {Chain} {Monte} {Carlo} {Methods} and the {Label} {Switching} {Problem} in {Bayesian} {Mixture} {Modeling}},
+	volume = {20},
+	issn = {0883-4237, 2168-8745},
+	doi = {10.1214/088342305000000016},
+	abstract = {In the past ten years there has been a dramatic increase of interest in the Bayesian analysis of finite mixture models. This is primarily because of the emergence of Markov chain Monte Carlo (MCMC) methods. While MCMC provides a convenient way to draw inference from complicated statistical models, there are many, perhaps underappreciated, problems associated with the MCMC analysis of mixtures. The problems are mainly caused by the nonidentifiability of the components under symmetric priors, which leads to so-called label switching in the MCMC output. This means that ergodic averages of component specific quantities will be identical and thus useless for inference. We review the solutions to the label switching problem, such as artificial identifiability constraints, relabelling algorithms and label invariant loss functions. We also review various MCMC sampling schemes that have been suggested for mixture models and discuss posterior sensitivity to prior specification.},
+	language = {en},
+	number = {1},
+	urldate = {2018-07-04},
+	journal = {Statistical Science},
+	author = {Jasra, Ajay and Holmes, Chris C. and Stephens, David A.},
+	month = feb,
+	year = {2005},
+	mrnumber = {MR2182987},
+	zmnumber = {1100.62032},
+	keywords = {Bayesian statistics, identifiability, label switching, MCMC, mixture modeling, sensitivity analysis},
+	pages = {50--67}
+}
+
+
+@article{copas_record_1990,
+	title = {Record {Linkage}: {Statistical} {Models} for {Matching} {Computer} {Records}},
+	volume = {153},
+	issn = {0964-1998},
+	shorttitle = {Record {Linkage}},
+	doi = {10.2307/2982975},
+	abstract = {We wish to measure the evidence that a pair of records relates to the same, rather than different, individuals. The paper emphasizes statistical models which can be fitted to a file of record pairs known to be correctly matched, and then used to estimate likelihood ratios. A number of models are developed and applied to UK immigration statistics. The combination of likelihood ratios for possibly correlated record fields is discussed.},
+	number = {3},
+	urldate = {2018-07-10},
+	journal = {Journal of the Royal Statistical Society. Series A (Statistics in Society)},
+	author = {Copas, J. B. and Hilton, F. J.},
+	year = {1990},
+	pages = {287--320}
+}
+
+@article{getoor_entity_2012,
+	title = {Entity {Resolution}: {Theory}, {Practice} \& {Open} {Challenges}},
+	volume = {5},
+	issn = {2150-8097},
+	shorttitle = {Entity {Resolution}},
+	doi = {10.14778/2367502.2367564},
+	abstract = {This tutorial brings together perspectives on ER from a variety of fields, including databases, machine learning, natural language processing and information retrieval, to provide, in one setting, a survey of a large body of work. We discuss both the practical aspects and theoretical underpinnings of ER. We describe existing solutions, current challenges, and open research problems.},
+	number = {12},
+	urldate = {2018-07-10},
+	journal = {Proc. VLDB Endow.},
+	author = {Getoor, Lise and Machanavajjhala, Ashwin},
+	month = aug,
+	year = {2012},
+	pages = {2018--2019}
+}
+
+@article{elmagarmid_duplicate_2007,
+	title = {Duplicate {Record} {Detection}: {A} {Survey}},
+	volume = {19},
+	issn = {1041-4347},
+	shorttitle = {Duplicate {Record} {Detection}},
+	doi = {10.1109/TKDE.2007.250581},
+	abstract = {Often, in the real world, entities have two or more representations in databases. Duplicate records do not share a common key and/or they contain errors that make duplicate matching a difficult task. Errors are introduced as the result of transcription errors, incomplete information, lack of standard formats, or any combination of these factors. In this paper, we present a thorough analysis of the literature on duplicate record detection. We cover similarity metrics that are commonly used to detect similar field entries, and we present an extensive set of duplicate detection algorithms that can detect approximately duplicate records in a database. We also cover multiple techniques for improving the efficiency and scalability of approximate duplicate detection algorithms. We conclude with coverage of existing tools and with a brief discussion of the big open problems in the area},
+	number = {1},
+	journal = {IEEE Transactions on Knowledge and Data Engineering},
+	author = {Elmagarmid, Ahmed K. and Ipeirotis, Panagiotis G. and Verykios, Vassilios S.},
+	month = jan,
+	year = {2007},
+	keywords = {Cleaning, Computer errors, Computer Society, Cost function, Couplings, data cleaning, data deduplication, data integration, data integrity, data mining, database hardening, database management system, database management systems, Detection algorithms, Duplicate detection, duplicate detection algorithm, duplicate record detection, entity matching., entity resolution, fuzzy duplicate detection, identity uncertainty, instance identification, Mirrors, name matching, record linkage, Relational databases, Scalability, transcription error, Uncertainty},
+	pages = {1--16}
+}
+
+@article{wang_crowder:_2012,
+	title = {{CrowdER}: {Crowdsourcing} {Entity} {Resolution}},
+	volume = {5},
+	issn = {2150-8097},
+	shorttitle = {{CrowdER}},
+	doi = {10.14778/2350229.2350263},
+	abstract = {Entity resolution is central to data integration and data cleaning. Algorithmic approaches have been improving in quality, but remain far from perfect. Crowdsourcing platforms offer a more accurate but expensive (and slow) way to bring human insight into the process. Previous work has proposed batching verification tasks for presentation to human workers but even with batching, a human-only approach is infeasible for data sets of even moderate size, due to the large numbers of matches to be tested. Instead, we propose a hybrid human-machine approach in which machines are used to do an initial, coarse pass over all the data, and people are used to verify only the most likely matching pairs. We show that for such a hybrid system, generating the minimum number of verification tasks of a given size is NP-Hard, but we develop a novel two-tiered heuristic approach for creating batched tasks. We describe this method, and present the results of extensive experiments on real data sets using a popular crowdsourcing platform. The experiments show that our hybrid approach achieves both good efficiency and high accuracy compared to machine-only or human-only alternatives.},
+	number = {11},
+	urldate = {2018-07-10},
+	journal = {Proc. VLDB Endow.},
+	author = {Wang, Jiannan and Kraska, Tim and Franklin, Michael J. and Feng, Jianhua},
+	month = jul,
+	year = {2012},
+	pages = {1483--1494}
+}
+
+@inproceedings{gokhale_corleone:_2014,
+	address = {New York, NY, USA},
+	series = {{SIGMOD} '14},
+	title = {Corleone: {Hands}-off {Crowdsourcing} for {Entity} {Matching}},
+	isbn = {978-1-4503-2376-5},
+	shorttitle = {Corleone},
+	doi = {10.1145/2588555.2588576},
+	abstract = {Recent approaches to crowdsourcing entity matching (EM) are limited in that they crowdsource only parts of the EM workflow, requiring a developer to execute the remaining parts. Consequently, these approaches do not scale to the growing EM need at enterprises and crowdsourcing startups, and cannot handle scenarios where ordinary users (i.e., the masses) want to leverage crowdsourcing to match entities. In response, we propose the notion of hands-off crowdsourcing (HOC), which crowdsources the entire workflow of a task, thus requiring no developers. We show how HOC can represent a next logical direction for crowdsourcing research, scale up EM at enterprises and crowdsourcing startups, and open up crowdsourcing for the masses. We describe Corleone, a HOC solution for EM, which uses the crowd in all major steps of the EM process. Finally, we discuss the implications of our work to executing crowdsourced RDBMS joins, cleaning learning models, and soliciting complex information types from crowd workers.},
+	urldate = {2018-07-10},
+	booktitle = {Proceedings of the 2014 {ACM} {SIGMOD} {International} {Conference} on {Management} of {Data}},
+	publisher = {ACM},
+	author = {Gokhale, Chaitanya and Das, Sanjib and Doan, AnHai and Naughton, Jeffrey F. and Rampalli, Narasimhan and Shavlik, Jude and Zhu, Xiaojin},
+	year = {2014},
+	keywords = {active learning, crowdsourcing, entity matching},
+	pages = {601--612}
+}
+
+
+@book{christen_data_2012,
+	address = {Berlin Heidelberg},
+	series = {Data-{Centric} {Systems} and {Applications}},
+	title = {Data {Matching}: {Concepts} and {Techniques} for {Record} {Linkage}, {Entity} {Resolution}, and {Duplicate} {Detection}},
+	isbn = {978-3-642-31163-5},
+	shorttitle = {Data {Matching}},
+	abstract = {Data matching (also known as record or data linkage, entity resolution, object identification, or field matching) is the task of identifying, matching and merging records that correspond to the same entities from several databases or even within one database. Based on research in various domains including applied statistics, health informatics, data mining, machine learning, artificial intelligence, database management, and digital libraries, significant advances have been achieved over the last decade in all aspects of the data matching process, especially on how to improve the accuracy of data matching, and its scalability to large databases.Peter Christen's??s book is divided into three parts: Part I, “Overview”, introduces the subject by presenting several sample applications and their special challenges, as well as a general overview of a generic data matching process. Part II, “Steps of the Data Matching Process”, then details its main steps like pre-processing, indexing, field and record comparison, classification, and quality evaluation. Lastly, part III, “Further Topics”, deals with specific aspects like privacy, real-time matching, or matching unstructured data. Finally, it briefly describes the main features of many research and open source systems available today.By providing the reader with a broad range of data matching concepts and techniques and touching on all aspects of the data matching process, this book helps researchers as well as students specializing in data quality or data matching aspects to familiarize themselves with recent research advances and to identify open research challenges in the area of data matching. To this end, each chapter of the book includes a final section that provides pointers to further background and research material. Practitioners will better understand the current state of the art in data matching as well as the internal workings and limitations of current systems. Especially, they will learn that it is often not feasible to simply implement an existing off-the-shelf data matching system without substantial adaption and customization. Such practical considerations are discussed for each of the major steps in the data matching process.},
+	language = {en},
+	urldate = {2018-07-10},
+	publisher = {Springer-Verlag},
+	author = {Christen, Peter},
+	year = {2012}
+}
+
+@article{papadakis_comparative_2016,
+	title = {Comparative {Analysis} of {Approximate} {Blocking} {Techniques} for {Entity} {Resolution}},
+	volume = {9},
+	issn = {2150-8097},
+	doi = {10.14778/2947618.2947624},
+	abstract = {Entity Resolution is a core task for merging data collections. Due to its quadratic complexity, it typically scales to large volumes of data through blocking: similar entities are clustered into blocks and pair-wise comparisons are executed only between co-occurring entities, at the cost of some missed matches. There are numerous blocking methods, and the aim of this work is to offer a comprehensive empirical survey, extending the dimensions of comparison beyond what is commonly available in the literature. We consider 17 state-of-the-art blocking methods and use 6 popular real datasets to examine the robustness of their internal configurations and their relative balance between effectiveness and time efficiency. We also investigate their scalability over a corpus of 7 established synthetic datasets that range from 10,000 to 2 million entities.},
+	number = {9},
+	urldate = {2018-07-10},
+	journal = {Proc. VLDB Endow.},
+	author = {Papadakis, George and Svirsky, Jonathan and Gal, Avigdor and Palpanas, Themis},
+	month = may,
+	year = {2016},
+	pages = {684--695}
+}
+
+
+@inproceedings{mudgal_deep_2018,
+	address = {New York, NY, USA},
+	series = {{SIGMOD} '18},
+	title = {Deep {Learning} for {Entity} {Matching}: {A} {Design} {Space} {Exploration}},
+	isbn = {978-1-4503-4703-7},
+	shorttitle = {Deep {Learning} for {Entity} {Matching}},
+	doi = {10.1145/3183713.3196926},
+	abstract = {Entity matching (EM) finds data instances that refer to the same real-world entity. In this paper we examine applying deep learning (DL) to EM, to understand DL's benefits and limitations. We review many DL solutions that have been developed for related matching tasks in text processing (e.g., entity linking, textual entailment, etc.). We categorize these solutions and define a space of DL solutions for EM, as embodied by four solutions with varying representational power: SIF, RNN, Attention, and Hybrid. Next, we investigate the types of EM problems for which DL can be helpful. We consider three such problem types, which match structured data instances, textual instances, and dirty instances, respectively. We empirically compare the above four DL solutions with Magellan, a state-of-the-art learning-based EM solution. The results show that DL does not outperform current solutions on structured EM, but it can significantly outperform them on textual and dirty EM. For practitioners, this suggests that they should seriously consider using DL for textual and dirty EM problems. Finally, we analyze DL's performance and discuss future research directions.},
+	urldate = {2018-07-10},
+	booktitle = {Proceedings of the 2018 {International} {Conference} on {Management} of {Data}},
+	publisher = {ACM},
+	author = {Mudgal, Sidharth and Li, Han and Rekatsinas, Theodoros and Doan, AnHai and Park, Youngchoon and Krishnan, Ganesh and Deep, Rohit and Arcaute, Esteban and Raghavendra, Vijay},
+	year = {2018},
+	keywords = {deep learning, entity matching, entity resolution},
+	pages = {19--34}
+}
+
+@inproceedings{galhotra_robust_2018,
+	address = {New York, NY, USA},
+	series = {{SIGMOD} '18},
+	title = {Robust {Entity} {Resolution} {Using} {Random} {Graphs}},
+	isbn = {978-1-4503-4703-7},
+	doi = {10.1145/3183713.3183755},
+	abstract = {Entity resolution (ER) seeks to identify which records in a data set refer to the same real-world entity. Given the diversity of ways in which entities can be represented, matched and distinguished, ER is known to be a challenging task for automated strategies, but relatively easier for expert humans. In our work, we abstract the knowledge of experts with the notion of a binary oracle. Our oracle can answer questions of the form "do records u and v refer to the same entity?" under a flexible error model, allowing for some questions to be more difficult to answer correctly than others. Our contribution is a general error correction tool that can be leveraged by a variety of hybrid-human machine ER algorithms, based on a formal way for selecting indirect "control queries''. In our experiments we demonstrate that correction-less ER algorithms equipped with our tool can perform even better than recent ER algorithms specifically designed for correcting errors. Our control queries are selected among those that provide strongest connectivity between records of each cluster, based on the concept ofgraph expanders (which are sparse graphs with formal connectivity properties). We give formal performance guarantees for our toolkit and provide experiments on real and synthetic data.},
+	urldate = {2018-07-10},
+	booktitle = {Proceedings of the 2018 {International} {Conference} on {Management} of {Data}},
+	publisher = {ACM},
+	author = {Galhotra, Sainyam and Firmani, Donatella and Saha, Barna and Srivastava, Divesh},
+	year = {2018},
+	keywords = {crowdsourcing, data cleaning, entity resolution, expander graphs},
+	pages = {3--18}
+}
+
+
+@inproceedings{singh_generating_2017,
+	address = {New York, NY, USA},
+	series = {{SIGMOD} '17},
+	title = {Generating {Concise} {Entity} {Matching} {Rules}},
+	isbn = {978-1-4503-4197-4},
+	doi = {10.1145/3035918.3058739},
+	abstract = {Entity matching (EM) is a critical part of data integration and cleaning. In many applications, the users need to understand why two entities are considered a match, which reveals the need for interpretable and concise EM rules. We model EM rules in the form of General Boolean Formulas (GBFs) that allows arbitrary attribute matching combined by conjunctions (∨), disjunctions (∧), and negations. (¬) GBFs can generate more concise rules than traditional EM rules represented in disjunctive normal forms (DNFs). We use program synthesis, a powerful tool to automatically generate rules (or programs) that provably satisfy a high-level specification, to automatically synthesize EM rules in GBF format, given only positive and negative matching examples. In this demo, attendees will experience the following features: (1) Interpretability -- they can see and measure the conciseness of EM rules defined using GBFs; (2) Easy customization -- they can provide custom experiment parameters for various datasets, and, easily modify a rich predefined (default) synthesis grammar, using a Web interface; and (3) High performance -- they will be able to compare the generated concise rules, in terms of accuracy, with probabilistic models (e.g., machine learning methods), and hand-written EM rules provided by experts. Moreover, this system will serve as a general platform for evaluating different methods that discover EM rules, which will be released as an open-source tool on GitHub.},
+	urldate = {2018-07-11},
+	booktitle = {Proceedings of the 2017 {ACM} {International} {Conference} on {Management} of {Data}},
+	publisher = {ACM},
+	author = {Singh, Rohit and Meduri, Vamsi and Elmagarmid, Ahmed and Madden, Samuel and Papotti, Paolo and Quian{\'e}-Ruiz, Jorge-Arnulfo and Solar-Lezama, Armando and Tang, Nan},
+	year = {2017},
+	keywords = {disjunctive normal forms, entity matching, general boolean formulas, program synthesis},
+	pages = {1635--1638}
+}
+
+@article{fan_reasoning_2009,
+	title = {Reasoning {About} {Record} {Matching} {Rules}},
+	volume = {2},
+	issn = {2150-8097},
+	doi = {10.14778/1687627.1687674},
+	abstract = {To accurately match records it is often necessary to utilize the semantics of the data. Functional dependencies (FDs) have proven useful in identifying tuples in a clean relation, based on the semantics of the data. For all the reasons that FDs and their inference are needed, it is also important to develop dependencies and their reasoning techniques for matching tuples from unreliable data sources. This paper investigates dependencies and their reasoning for record matching. (a) We introduce a class of matching dependencies (MDs) for specifying the semantics of data in unreliable relations, defined in terms of similarity metrics and a dynamic semantics. (b) We identify a special case of MDs, referred to as relative candidate keys (RCKs), to determine what attributes to compare and how to compare them when matching records across possibly different relations. (c) We propose a mechanism for inferring MDs, a departure from traditional implication analysis, such that when we cannot match records by comparing attributes that contain errors, we may still find matches by using other, more reliable attributes. (d) We provide an O(n2) time algorithm for inferring MDs, and an effective algorithm for deducing a set of RCKs from MDs. (e) We experimentally verify that the algorithms help matching tools efficiently identify keys at compile time for matching, blocking or windowing, and that the techniques effectively improve both the quality and efficiency of various record matching methods.},
+	number = {1},
+	urldate = {2018-07-11},
+	journal = {Proc. VLDB Endow.},
+	author = {Fan, Wenfei and Jia, Xibei and Li, Jianzhong and Ma, Shuai},
+	month = aug,
+	year = {2009},
+	pages = {407--418}
+}
+
+@incollection{neal_mcmc_2011,
+	address = {New York},
+	series = {Handbooks of {Modern} {Statistical} {Methods}},
+	title = {{MCMC} {Using} {Hamiltonian} {Dynamics}},
+	isbn = {978-1-4200-7942-5},
+	abstract = {Markov chain Monte Carlo (MCMC) originated with the classic paper of Metropolis et al. (1953), where it was used to simulate the distribution of states for a system of idealized molecules. Not long after, another approach to molecular simulation was introduced (Alder and Wainwright, 1959), in which the motion of the molecules was deterministic, following Newton’s laws of motion, which have an elegant formalization as Hamiltonian dynamics. For finding the properties of bulk materials, these approaches are asymptotically equivalent, since even in a deterministic simulation, each local region of the material experiences effectively random influences from distant regions. Despite the large overlap in their application areas, the MCMC and molecular dynamics approaches have continued to coexist in the following decades (see Frenkel and Smit, 1996).},
+	language = {en},
+	booktitle = {Handbook of {Markov} {Chain} {Monte} {Carlo}},
+	publisher = {Chapman and Hall/CRC},
+	author = {Neal, Radford M.},
+	editor = {Brooks, Steve and Gelman, Andrew and Jones, Galin L. and Meng, Xiao-Li},
+	month = may,
+	year = {2011},
+	note = {Google-Books-ID: qfRsAIKZ4rIC},
+	keywords = {Mathematics / Probability \& Statistics / General, Science / Life Sciences / Biology},
+	pages = {50}
+}
+
+
+@article{blei_variational_2017,
+	title = {Variational {Inference}: {A} {Review} for {Statisticians}},
+	volume = {112},
+	issn = {0162-1459},
+	shorttitle = {Variational {Inference}},
+	doi = {10.1080/01621459.2017.1285773},
+	abstract = {One of the core problems of modern statistics is to approximate difficult-to-compute probability densities. This problem is especially important in Bayesian statistics, which frames all inference about unknown quantities as a calculation involving the posterior density. In this article, we review variational inference (VI), a method from machine learning that approximates probability densities through optimization. VI has been used in many applications and tends to be faster than classical methods, such as Markov chain Monte Carlo sampling. The idea behind VI is to first posit a family of densities and then to find a member of that family which is close to the target density. Closeness is measured by Kullback–Leibler divergence. We review the ideas behind mean-field variational inference, discuss the special case of VI applied to exponential family models, present a full example with a Bayesian mixture of Gaussians, and derive a variant that uses stochastic optimization to scale up to massive data. We discuss modern research in VI and highlight important open problems. VI is powerful, but it is not yet well understood. Our hope in writing this article is to catalyze statistical research on this class of algorithms. Supplementary materials for this article are available online.},
+	number = {518},
+	urldate = {2018-07-11},
+	journal = {Journal of the American Statistical Association},
+	author = {Blei, David M. and Kucukelbir, Alp and McAuliffe, Jon D.},
+	month = apr,
+	year = {2017},
+	keywords = {Algorithms, Computationally intensive methods, Statistical computing}
+}
+
+
+@inproceedings{gal_pitfalls_2014,
+	address = {Beijing, China},
+	series = {{ICML}'14},
+	title = {Pitfalls in the {Use} of {Parallel} {Inference} for the {Dirichlet} {Process}},
+	abstract = {Recent work done by Lovell, Adams, and Mansingka (2012) and Williamson, Dubey, and Xing (2013) has suggested an alternative parametrisation for the Dirichlet process in order to derive non-approximate parallel MCMC inference for it - work which has been picked-up and implemented in several different fields. In this paper we show that the approach suggested is impractical due to an extremely unbalanced distribution of the data. We characterise the requirements of efficient parallel inference for the Dirichlet process and show that the proposed inference fails most of these requirements (while approximate approaches often satisfy most of them). We present both theoretical and experimental evidence, analysing the load balance for the inference and showing that it is independent of the size of the dataset and the number of nodes available in the parallel implementation. We end with suggestions of alternative paths of research for efficient non-approximate parallel inference for the Dirichlet process.},
+	urldate = {2018-07-11},
+	booktitle = {Proceedings of the 31st {International} {Conference} on {International} {Conference} on {Machine} {Learning} - {Volume} 32},
+	publisher = {JMLR.org},
+	author = {Gal, Yarin and Ghahramani, Zoubin},
+	year = {2014},
+	pages = {II--208--II--216}
+}
+
+
+@article{smola_architecture_2010,
+	title = {An {Architecture} for {Parallel} {Topic} {Models}},
+	volume = {3},
+	issn = {2150-8097},
+	doi = {10.14778/1920841.1920931},
+	abstract = {This paper describes a high performance sampling architecture for inference of latent topic models on a cluster of workstations. Our system is faster than previous work by over an order of magnitude and it is capable of dealing with hundreds of millions of documents and thousands of topics. The algorithm relies on a novel communication structure, namely the use of a distributed (key, value) storage for synchronizing the sampler state between computers. Our architecture entirely obviates the need for separate computation and synchronization phases. Instead, disk, CPU, and network are used simultaneously to achieve high performance. We show that this architecture is entirely general and that it can be extended easily to more sophisticated latent variable models such as n-grams and hierarchies.},
+	number = {1-2},
+	urldate = {2018-07-11},
+	journal = {Proc. VLDB Endow.},
+	author = {Smola, Alexander and Narayanamurthy, Shravan},
+	month = sep,
+	year = {2010},
+	pages = {703--710}
+}
+
+@InProceedings{ahn_distributed_2014,
+  title = {Distributed {Stochastic} {Gradient} {MCMC}},
+  author = {Sungjin Ahn and Babak Shahbaba and Max Welling},
+  booktitle = {Proceedings of the 31st International Conference on Machine Learning},
+  pages = {1044--1052},
+  year = {2014},
+  editor = {Eric P. Xing and Tony Jebara},
+  volume = {32},
+  number = {2},
+  series = {Proceedings of Machine Learning Research},
+  address = {Bejing, China},
+  month = {22--24 Jun},
+  publisher = {PMLR},
+  abstract = {Probabilistic inference on a big data scale is becoming increasingly relevant to both the machine learning and statistics communities. Here we introduce the first fully distributed MCMC algorithm based on stochastic gradients. We argue that stochastic gradient MCMC algorithms are particularly suited for distributed inference because individual chains can draw minibatches from their local pool of data for a flexible amount of time before jumping to or syncing with other chains. This greatly reduces communication overhead and allows adaptive load balancing. Our experiments for LDA on Wikipedia and Pubmed show that relative to the state of the art in distributed MCMC we reduce compute time from 27 hours to half an hour in order to reach the same perplexity level.}
+}
+
+@book{naumann_introduction_2010,
+	title = {An {Introduction} to {Duplicate} {Detection}},
+	isbn = {978-1-60845-220-0},
+	abstract = {With the ever increasing volume of data, data quality problems abound. Multiple, yet different representations of the same real-world objects in data, duplicates, are one of the most intriguing data quality problems. The effects of such duplicates are detrimental; for instance, bank customers can obtain duplicate identities, inventory levels are monitored incorrectly, catalogs are mailed multiple times to the same household, etc. Automatically detecting duplicates is difficult: First, duplicate representations are usually not identical but slightly differ in their values. Second, in principle all pairs of records should be compared, which is infeasible for large volumes of data. This lecture examines closely the two main components to overcome these difficulties: (i) Similarity measures are used to automatically identify duplicates when comparing two records. Well-chosen similarity measures improve the effectiveness of duplicate detection. (ii) Algorithms are developed to perform on very large volumes of data in search for duplicates. Well-designed algorithms improve the efficiency of duplicate detection. Finally, we discuss methods to evaluate the success of duplicate detection. Table of Contents: Data Cleansing: Introduction and Motivation / Problem Definition / Similarity Functions / Duplicate Detection Algorithms / Evaluating Detection Success / Conclusion and Outlook / Bibliography},
+	publisher = {Morgan and Claypool Publishers},
+	author = {Naumann, Felix and Herschel, Melanie},
+	year = {2010}
+}
+
+@book{gelman_bayesian_2013,
+	address = {New York},
+	edition = {3rd edition},
+	series = {Texts in {Statistical} {Science}},
+	title = {Bayesian {Data} {Analysis}},
+	isbn = {978-1-4398-9820-8},
+	language = {en},
+	urldate = {2018-07-13},
+	publisher = {Chapman and Hall/CRC},
+	author = {Gelman, Andrew and Carlin, John B. and Stern, Hal S. and Dunson, David B. and Vehtari, Aki and Rubin, Donald B.},
+	month = nov,
+	year = {2013},
+	doi = {10.1201/b16018}
+}
+
+@article{winkler2014matching,
+  title = {Matching and record linkage},
+  author = {Winkler, William E.},
+  journal = {Wiley Interdisciplinary Reviews: Computational Statistics},
+  volume = {6},
+  number = {5},
+  pages = {313--325},
+  year = {2014},
+  month = jul,
+  publisher = {Wiley Online Library},
+  copyright = {Published 2014. This article is a U.S. Government work and is in the public domain in the USA.},
+  issn = {1939-0068},
+  doi = {10.1002/wics.1317},
+  abstract = {This overview gives background on a number of statistical methods that have been proven effective for record linkage. To prepare data for the main computational algorithms, we need parsing/standardization that allows us to structure the free-form names, addresses, and other fields into corresponding components. The main parameter-estimation methods are unsupervised methods that yield ‘optimal’ record linkage parameters. Extended methods provide estimates of false match rates in both unsupervised and, with greater accuracy, in semi-supervised situations. Finally, the paper describes ongoing research for adjusting standard statistical analyses for linkage error.},
+  language = {en}
+}
+
+
+@article{dong_big_2015,
+	title = {Big {Data} {Integration}},
+	volume = {7},
+	issn = {2153-5418},
+	doi = {10.2200/S00578ED1V01Y201404DTM040},
+	number = {1},
+	urldate = {2016-02-15},
+	journal = {Synthesis Lectures on Data Management},
+	author = {Dong, Xin Luna and Srivastava, Divesh},
+	month = feb,
+	year = {2015},
+	pages = {1--198}
+}
+
+
+@article{bleiholder_data_2009,
+	title = {Data {Fusion}},
+	volume = {41},
+	issn = {0360-0300},
+	doi = {10.1145/1456650.1456651},
+	abstract = {The development of the Internet in recent years has made it possible and useful to access many different information systems anywhere in the world to obtain information. While there is much research on the integration of heterogeneous information systems, most commercial systems stop short of the actual integration of available data. Data fusion is the process of fusing multiple records representing the same real-world object into a single, consistent, and clean representation. This article places data fusion into the greater context of data integration, precisely defines the goals of data fusion, namely, complete, concise, and consistent data, and highlights the challenges of data fusion, namely, uncertain and conflicting data values. We give an overview and classification of different ways of fusing data and present several techniques based on standard and advanced operators of the relational algebra and SQL. Finally, the article features a comprehensive survey of data integration systems from academia and industry, showing if and how data fusion is performed in each.},
+	number = {1},
+	urldate = {2016-06-16},
+	journal = {ACM Comput. Surv.},
+	author = {Bleiholder, Jens and Naumann, Felix},
+	month = jan,
+	year = {2009},
+	keywords = {Data cleansing, data conflicts, data consolidation, data integration, data merging, data quality},
+	pages = {1:1--1:41}
+}
+
+
+@article{zhao_bayesian_2012,
+	title = {A {Bayesian} {Approach} to {Discovering} {Truth} from {Conflicting} {Sources} for {Data} {Integration}},
+	volume = {5},
+	issn = {2150-8097},
+	doi = {10.14778/2168651.2168656},
+	abstract = {In practical data integration systems, it is common for the data sources being integrated to provide conflicting information about the same entity. Consequently, a major challenge for data integration is to derive the most complete and accurate integrated records from diverse and sometimes conflicting sources. We term this challenge the truth finding problem. We observe that some sources are generally more reliable than others, and therefore a good model of source quality is the key to solving the truth finding problem. In this work, we propose a probabilistic graphical model that can automatically infer true records and source quality without any supervision. In contrast to previous methods, our principled approach leverages a generative process of two types of errors (false positive and false negative) by modeling two different aspects of source quality. In so doing, ours is also the first approach designed to merge multi-valued attribute types. Our method is scalable, due to an efficient sampling-based inference algorithm that needs very few iterations in practice and enjoys linear time complexity, with an even faster incremental variant. Experiments on two real world datasets show that our new method outperforms existing state-of-the-art approaches to the truth finding problem.},
+	number = {6},
+	journal = {Proc. VLDB Endow.},
+	author = {Zhao, Bo and Rubinstein, Benjamin I. P. and Gemmell, Jim and Han, Jiawei},
+	month = feb,
+	year = {2012},
+	pages = {550--561}
+}
+
+@article{li_survey_2016,
+	title = {A {Survey} on {Truth} {Discovery}},
+	volume = {17},
+	issn = {1931-0145},
+	doi = {10.1145/2897350.2897352},
+	abstract = {Thanks to information explosion, data for the objects of interest can be collected from increasingly more sources. However, for the same object, there usually exist conflicts among the collected multi-source information. To tackle this challenge, truth discovery, which integrates multi-source noisy information by estimating the reliability of each source, has emerged as a hot topic. Several truth discovery methods have been proposed for various scenarios, and they have been successfully applied in diverse application domains. In this survey, we focus on providing a comprehensive overview of truth discovery methods, and summarizing them from different aspects. We also discuss some future directions of truth discovery research. We hope that this survey will promote a better understanding of the current progress on truth discovery, and offer some guidelines on how to apply these approaches in application domains.},
+	number = {2},
+	journal = {SIGKDD Explor. Newsl.},
+	author = {Li, Yaliang and Gao, Jing and Meng, Chuishi and Li, Qi and Su, Lu and Zhao, Bo and Fan, Wei and Han, Jiawei},
+	month = feb,
+	year = {2016},
+	pages = {1--16}
+}
+
+@inproceedings{li_resolving_2014,
+	address = {New York, NY, USA},
+	series = {{SIGMOD} '14},
+	title = {Resolving {Conflicts} in {Heterogeneous} {Data} by {Truth} {Discovery} and {Source} {Reliability} {Estimation}},
+	isbn = {978-1-4503-2376-5},
+	doi = {10.1145/2588555.2610509},
+	abstract = {In many applications, one can obtain descriptions about the same objects or events from a variety of sources. As a result, this will inevitably lead to data or information conflicts. One important problem is to identify the true information (i.e., the truths) among conflicting sources of data. It is intuitive to trust reliable sources more when deriving the truths, but it is usually unknown which one is more reliable a priori. Moreover, each source possesses a variety of properties with different data types. An accurate estimation of source reliability has to be made by modeling multiple properties in a unified model. Existing conflict resolution work either does not conduct source reliability estimation, or models multiple properties separately. In this paper, we propose to resolve conflicts among multiple sources of heterogeneous data types. We model the problem using an optimization framework where truths and source reliability are defined as two sets of unknown variables. The objective is to minimize the overall weighted deviation between the truths and the multi-source observations where each source is weighted by its reliability. Different loss functions can be incorporated into this framework to recognize the characteristics of various data types, and efficient computation approaches are developed. Experiments on real-world weather, stock and flight data as well as simulated multi-source data demonstrate the necessity of jointly modeling different data types in the proposed framework.},
+	booktitle = {Proceedings of the 2014 {ACM} {SIGMOD} {International} {Conference} on {Management} of {Data}},
+	publisher = {ACM},
+	author = {Li, Qi and Li, Yaliang and Gao, Jing and Zhao, Bo and Fan, Wei and Han, Jiawei},
+	year = {2014},
+	keywords = {data fusion, heterogeneous data, truth discovery},
+	pages = {1187--1198}
+}
+
+@article{zheng_truth_2017,
+	title = {Truth {Inference} in {Crowdsourcing}: {Is} the {Problem} {Solved}?},
+	volume = {10},
+	issn = {2150-8097},
+	shorttitle = {Truth {Inference} in {Crowdsourcing}},
+	doi = {10.14778/3055540.3055547},
+	abstract = {Crowdsourcing has emerged as a novel problem-solving paradigm, which facilitates addressing problems that are hard for computers, e.g., entity resolution and sentiment analysis. However, due to the openness of crowdsourcing, workers may yield low-quality answers, and a redundancy-based method is widely employed, which first assigns each task to multiple workers and then infers the correct answer (called truth) for the task based on the answers of the assigned workers. A fundamental problem in this method is Truth Inference, which decides how to effectively infer the truth. Recently, the database community and data mining community independently study this problem and propose various algorithms. However, these algorithms are not compared extensively under the same framework and it is hard for practitioners to select appropriate algorithms. To alleviate this problem, we provide a detailed survey on 17 existing algorithms and perform a comprehensive evaluation using 5 real datasets. We make all codes and datasets public for future research. Through experiments we find that existing algorithms are not stable across different datasets and there is no algorithm that outperforms others consistently. We believe that the truth inference problem is not fully solved, and identify the limitations of existing algorithms and point out promising research directions.},
+	number = {5},
+	journal = {Proc. VLDB Endow.},
+	author = {Zheng, Yudian and Li, Guoliang and Li, Yuanbing and Shan, Caihua and Cheng, Reynold},
+	month = jan,
+	year = {2017},
+	pages = {541--552}
+}
+
+
+@inproceedings{pasternack_latent_2013,
+	address = {New York, NY, USA},
+	series = {{WWW} '13},
+	title = {Latent {Credibility} {Analysis}},
+	isbn = {978-1-4503-2035-1},
+	doi = {10.1145/2488388.2488476},
+	abstract = {A frequent problem when dealing with data gathered from multiple sources on the web (ranging from booksellers to Wikipedia pages to stock analyst predictions) is that these sources disagree, and we must decide which of their (often mutually exclusive) claims we should accept. Current state-of-the-art information credibility algorithms known as "fact-finders" are transitive voting systems with rules specifying how votes iteratively flow from sources to claims and then back to sources. While this is quite tractable and often effective, fact-finders also suffer from substantial limitations; in particular, a lack of transparency obfuscates their credibility decisions and makes them difficult to adapt and analyze: knowing the mechanics of how votes are calculated does not readily tell us what those votes mean, and finding, for example, that a source has a score of 6 is not informative. We introduce a new approach to information credibility, Latent Credibility Analysis (LCA), constructing strongly principled, probabilistic models where the truth of each claim is a latent variable and the credibility of a source is captured by a set of model parameters. This gives LCA models clear semantics and modularity that make extending them to capture additional observed and latent credibility factors straightforward. Experiments over four real-world datasets demonstrate that LCA models can outperform the best fact-finders in both unsupervised and semi-supervised settings.},
+	booktitle = {Proceedings of the 22Nd {International} {Conference} on {World} {Wide} {Web}},
+	publisher = {ACM},
+	author = {Pasternack, Jeff and Roth, Dan},
+	year = {2013},
+	keywords = {Graphical models, credibility, trust, veracity},
+	pages = {1009--1020}
+}
+
+
+@article{lesot_similarity_2008,
+	title = {Similarity measures for binary and numerical data: a survey},
+	volume = {1},
+	issn = {1755-3210},
+	shorttitle = {Similarity measures for binary and numerical data},
+	doi = {10.1504/IJKESDP.2009.021985},
+	abstract = {Similarity measures aim at quantifying the extent to which objects resemble each other. Many techniques in data mining, data analysis or information retrieval require a similarity measure, and selecting an appropriate measure for a given problem is a difficult task. In this paper, the diverse forms similarity measures can take are examined, as well as their relationships and respective properties. Their semantic differences are highlighted and numerical tools to quantify these differences are proposed, considering several points of view and including global and local comparisons, order-based and value-based comparisons, and mathematical properties such as derivability. The paper studies similarity measures for two types of data: binary and numerical data, i.e., set data represented by the presence or absence of characteristics and data represented by real vectors.},
+	number = {1},
+	journal = {International Journal of Knowledge Engineering and Soft Data Paradigms},
+	author = {Lesot, Marie-Jeanne and Rifqi, Maria and Benhadda, Hamid},
+	month = dec,
+	year = {2008},
+	pages = {63--84}
+}
+
+
+@article{turek_efficient_2016,
+	title = {Efficient {Markov} chain {Monte} {Carlo} sampling for hierarchical hidden {Markov} models},
+	volume = {23},
+	issn = {1352-8505, 1573-3009},
+	doi = {10.1007/s10651-016-0353-z},
+	abstract = {Traditional Markov chain Monte Carlo (MCMC) sampling of hidden Markov models (HMMs) involves latent states underlying an imperfect observation process, and generates posterior samples for top-level parameters concurrently with nuisance latent variables. When potentially many HMMs are embedded within a hierarchical model, this can result in prohibitively long MCMC runtimes. We study combinations of existing methods, which are shown to vastly improve computational efficiency for these hierarchical models while maintaining the modeling flexibility provided by embedded HMMs. The methods include discrete filtering of the HMM likelihood to remove latent states, reduced data representations, and a novel procedure for dynamic block sampling of posterior dimensions. The first two methods have been used in isolation in existing application-specific software, but are not generally available for incorporation in arbitrary model structures. Using the NIMBLE package for R, we develop and test combined computational approaches using three examples from ecological capture–recapture, although our methods are generally applicable to any embedded discrete HMMs. These combinations provide several orders of magnitude improvement in MCMC sampling efficiency, defined as the rate of generating effectively independent posterior samples. In addition to being computationally significant for this class of hierarchical models, this result underscores the potential for vast improvements to MCMC sampling efficiency which can result from combinations of known algorithms.},
+	language = {en},
+	number = {4},
+	journal = {Environmental and Ecological Statistics},
+	author = {Turek, Daniel and Valpine, Perry de and Paciorek, Christopher J.},
+	month = dec,
+	year = {2016},
+	pages = {549--564}
+}
+
+@inproceedings{bilenko_adaptive_2003,
+	address = {New York, NY, USA},
+	series = {{KDD} '03},
+	title = {Adaptive {Duplicate} {Detection} {Using} {Learnable} {String} {Similarity} {Measures}},
+	isbn = {978-1-58113-737-8},
+	doi = {10.1145/956750.956759},
+	abstract = {The problem of identifying approximately duplicate records in databases is an essential step for data cleaning and data integration processes. Most existing approaches have relied on generic or manually tuned distance metrics for estimating the similarity of potential duplicates. In this paper, we present a framework for improving duplicate detection using trainable measures of textual similarity. We propose to employ learnable text distance functions for each database field, and show that such measures are capable of adapting to the specific notion of similarity that is appropriate for the field's domain. We present two learnable text similarity measures suitable for this task: an extended variant of learnable string edit distance, and a novel vector-space based measure that employs a Support Vector Machine (SVM) for training. Experimental results on a range of datasets show that our framework can improve duplicate detection accuracy over traditional techniques.},
+	booktitle = {Proceedings of the {Ninth} {ACM} {SIGKDD} {International} {Conference} on {Knowledge} {Discovery} and {Data} {Mining}},
+	publisher = {ACM},
+	author = {Bilenko, Mikhail and Mooney, Raymond J.},
+	year = {2003},
+	keywords = {data cleaning, distance metric learning, record linkage, string edit distance, SVM applications, trained similarity measures},
+	pages = {39--48}
+}
+
+@article{tancredi_2015_regression,
+  title={Regression analysis with linked data: problems and possible solutions},
+  author={Tancredi, Andrea and Liseo, Brunero},
+  journal={Statistica},
+  volume={75},
+  number={1},
+  pages={19--35},
+  year={2015}
+}
+
+@article{konda2016magellan,
+  title={Magellan: Toward building entity matching management systems},
+  author={Konda, Pradap and Das, Sanjib and Suganthan GC, Paul and Doan, AnHai and Ardalan, Adel and Ballard, Jeffrey R and Li, Han and Panahi, Fatemah and Zhang, Haojun and Naughton, Jeff and others},
+  journal={Proceedings of the VLDB Endowment},
+  volume={9},
+  number={12},
+  pages={1197--1208},
+  year={2016},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{das2017falcon,
+  title={Falcon: Scaling up hands-off crowdsourced entity matching to build cloud services},
+  author={Das, Sanjib and GC, Paul Suganthan and Doan, AnHai and Naughton, Jeffrey F and Krishnan, Ganesh and Deep, Rohit and Arcaute, Esteban and Raghavendra, Vijay and Park, Youngchoon},
+  booktitle={Proceedings of the 2017 ACM International Conference on Management of Data},
+  pages={1431--1446},
+  year={2017},
+  organization={ACM}
+}
+
+@article{chen2018unique,
+  title={Unique entity estimation with application to the {S}yrian conflict},
+  author={Chen, Beidi and Shrivastava, Anshumali and Steorts, Rebecca C},
+  journal={The Annals of Applied Statistics},
+  volume={12},
+  number={2},
+  pages={1039--1067},
+  year={2018},
+  publisher={Institute of Mathematical Statistics}
+}
+
+@article{copas1990record,
+  title={Record linkage: statistical models for matching computer records},
+  author={Copas, JB and Hilton, FJ},
+  journal={Journal of the Royal Statistical Society. Series A (Statistics in Society)},
+  pages={287--320},
+  year={1990},
+  publisher={JSTOR}
+}
+
+@Manual{mcmcse,
+    title = {mcmcse: Monte Carlo Standard Errors for MCMC},
+    author = {James M. Flegal and John Hughes and Dootika Vats and Ning Dai},
+    year = {2017},
+    address = {Riverside, CA, Denver, CO, Coventry, UK, and Minneapolis, MN},
+    note = {R package version 1.3-2},
+  }
+
+@book{little_statistical_2002,
+	title = {Statistical {Analysis} with {Missing} {Data}},
+	isbn = {978-0-471-18386-0},
+	language = {en},
+	publisher = {Wiley},
+	author = {Little, Roderick J. A. and Rubin, Donald B.},
+	month = sep,
+	year = {2002}
+}
+
+@misc{mcveigh_practical_2017,
+  title={Practical {Bayesian} {Inference} for {Record} {Linkage}},
+  author={Brendan S. McVeigh and Jared S. Murray},
+  year={2017},
+  journal={arXiv:1710.10558 [stat]},
+  eprint={1710.10558},
+  archivePrefix={arXiv},
+  primaryClass={stat.ME}
+}
+
+@misc{price_2013,
+  title={{Updated Statistical Analysis of Documentation of Killings in the Syrian Arab Repulic}},
+  author={Price, Megan and Klinger, Jeff and Qtiesh, Anas and Ball, Patrick},
+  month=jun,
+  year={2013},
+  organization={Human Rights Data Analysis Group, commissioned by the United Nations Office of the High Commissioner for Human Rights (OHCHR)}
+}
+
+@article{saria2014,
+  title = {A \$3 trillion challenge to computational scientists: {Transforming} healthcare delivery},
+  author = {Suchi Saria},
+  year = {2014},
+  month = jul,
+  doi = {10.1109/MIS.2014.58},
+  volume = {29},
+  pages = {82--87},
+  journal = {IEEE Intelligent Systems},
+  issn = {1541-1672},
+  publisher = {Institute of Electrical and Electronics Engineers Inc.},
+  number = {4},
+}
+
+@book{seybolt2013counting,
+  title = {{Counting Civilian Casualties: An Introduction to Recording and Estimating Nonmilitary Deaths in Conflict}},
+  author = {Seybolt, Taylor B. and Aronson, Jay D. and Fischhoff, Baruch},
+  year = {2013},
+  publisher = {Oxford University Press},
+  url = {https://www.oxfordscholarship.com/10.1093/acprof:oso/9780199977307.001.0001/acprof-9780199977307},
+  doi = {10.1093/acprof:oso/9780199977307.001.0001},
+  pages = {320}
+}
+
+@article{enamorado_using_2019, 
+  title={Using a {Probabilistic} {Model} to {Assist} {Merging} of {Large-Scale} {Administrative} {Records}}, 
+  volume={113}, 
+  DOI={10.1017/S0003055418000783}, 
+  number={2}, 
+  journal={American Political Science Review}, 
+  publisher={Cambridge University Press}, 
+  author={Enamorado, Ted and Fifield, Benjamin and Imai, Kosuke}, 
+  year={2019}, 
+  pages={353--371}
+}

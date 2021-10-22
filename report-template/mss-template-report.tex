@@ -1,0 +1,180 @@
+\documentclass[12,runningheads,a4paper]{llncs}
+
+\usepackage[sort&compress]{natbib}
+%% The command below will switch your reference to numbers instead of long reference and saves space! 
+%\usepackage[sort&compress, numbers]{natbib}
+\usepackage{comment}
+
+\usepackage{rotating}
+\usepackage{subfigure}
+\usepackage{caption}
+
+\usepackage{amssymb,amsmath}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{mathtools}
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{multirow}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{dsfont}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{graphicx}
+%%\usepackage{subfig}
+\usepackage{enumitem}
+\usepackage{soul}
+
+\usepackage{tikz}     
+
+\newcommand{\partfn}{\mathtt{PartFn}} % partition function
+\newcommand{\fastLink}{\texttt{fastLink}}
+\newcommand{\blink}{\texttt{\upshape \lowercase{blink}}} % Name of scalable Bayesian ER model
+\newcommand{\dblink}{\texttt{\upshape \lowercase{dblink}}} % Name of scalable Bayesian ER model
+
+\newcommand{\R}{\texttt{R}}
+\newcommand{\fL}{\texttt{fastLink}}
+\newcommand{\fLL}{\texttt{fastLink-L}}
+\newcommand{\fLS}{\texttt{fastLink-S}}
+\newcommand{\fLdb}{\texttt{fastLink-dblink}}
+\newcommand{\fLdbL}{\texttt{fastLink-dblink-L}}
+\newcommand{\fLdbS}{\texttt{fastLink-dblink-S}}
+\newcommand{\db}{\texttt{dblink}}
+\newcommand{\RLfive}{\texttt{RLdata500}}
+\newcommand{\RLten}{\texttt{RLdata10000}}
+
+\usepackage{url}
+\urldef{\mailsa}\path|beka@cmu.edu, {sventura, msadinle, fienberg}@stat.cmu.edu|
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+
+\usepackage{arabtex}
+\usepackage{utf8}
+\usepackage{soul}
+
+
+\usepackage[switch]{lineno}
+\linenumbers
+\RequirePackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage[ruled,lined]{algorithm2e}
+\SetKw{KwSet}{Set}
+
+%\newcommand{\R}{\mathbb{R}}
+\newcommand{\bx}{\boldsymbol{x}}
+\newcommand{\by}{\boldsymbol{y}}
+
+\let\oldvec\vec
+\renewcommand\vec{\bm}
+\newcommand{\simfn}{\mathtt{sim}} % similarity function
+\newcommand{\truncsimfn}{\underline{\simfn}} % truncated similarity function
+\newcommand{\distfn}{\mathtt{dist}} % distance function
+\newcommand{\valset}{\mathcal{V}} % attribute value set
+\newcommand{\entset}{\mathcal{R}} % set of records that make up an entity
+\newcommand{\partset}{\mathcal{E}} % set of entities that make up a partition
+\newcommand{\1}[1]{\mathbb{I}\!\left[#1\right]} % indicator function
+\newcommand{\euler}{\mathrm{e}} % Euler's constant
+\newcommand{\secref}[1]{Section~\ref{#1}} % Section reference
+\newcommand{\myparagraph}[1]{\smallskip\textbf{#1}}
+\newcommand{\eat}[1]{}
+%\newcommand{\change}[1]{#1}
+\newcommand{\change}[1]{{\color{blue}#1}}
+\def\spacingset#1{\renewcommand{\baselinestretch}%
+  {#1}\small\normalsize} \spacingset{1}
+
+
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+\title{Title}
+
+
+% a short form should be given in case it is too long for the running head
+\titlerunning{Title}
+
+\author{Rebecca C. Steorts$^{2}$%
+\thanks{This research was  partially supported by the Alfred P. Sloan Foundation.}%
+ }
+
+
+%
+\authorrunning{Steorts}
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+\institute{$^{1}$Department of Statistical Science \\
+\path|{beka}@stat.duke.edu|
+% Pittsburgh, PA 15213\\
+%\mailsa\\
+%%\mailsb\\
+%%\mailsc\\
+%\url{http://www.stat.cmu.edu}
+%\path|{{anshumali}@rice.edu, {beka}@stat.duke.edu|
+}
+\maketitle
+
+\begin{abstract}
+\textbf{The abstract should contain a summary of the work that you will outline in your paper.}
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+
+The introduction should contain any prior work related to your proposed project, which is also known as a literature review. You should review the literature that is most related to your proposed work, and be sure to provide citations to the literature. 
+
+You can reference a citation using the following commands \cite{jain_split-merge_2004} and \citep{jain_split-merge_2004}. 
+
+The remainder of the paper is as follows. Section \ref{sec:methods} provides the methods used in our proposed work. Section \ref{sec:evaluations} reviews the metrics used to evaluation our methods. Section \ref{sec:app} discusses an application on the decennial census, where we present the results in section \ref{sec:results-app}. Section \ref{sec:sim} provides a simulation study, where we evaluate our proposed methodology on it in section \ref{sec:sim-results}. Section \ref{sec:discussion} concludes our paper and discusses future work. 
+
+\section{Methods}
+\label{sec:methods}
+This section should contain any proposed methods that you use in your analysis. Be sure to reference any citations to the literature if you are utilizing methodology that is not purely your own proposal. 
+
+\section{Evaluation Metrics}
+\label{sec:evaluations}
+This section should contain any evaluation metrics that will be used to evaluate your proposed methods on any real/simulated data sets. 
+
+\section{Applications}
+\label{sec:app}
+This section should contain a real application or case study, evaluating the methodology in section \ref{sec:methods}.
+
+\subsection{Results on Application}
+\label{sec:results-app}
+This section should contain your results to a real application from the previous section. 
+
+\section{Simulation Study}
+\label{sec:sim}
+This section should contain a simulation study, evaluating the methodology in section \ref{sec:methods}.
+
+\subsection{Results on Simulation Study}
+\label{sec:sim-results}
+\label{sec:results-app}
+This section should contain your results to a simulation study. 
+
+\section{Discussion}
+\label{sec:discussion}
+This section should contain a discussion of your proposal, findings, and future work. 
+
+
+\textbf{These commands below allow you to build a bibliography automatically into your paper and update it. You can use Google scholar and keep track of your bibliography using your .bib file.}
+
+\clearpage
+\newpage
+
+\bibliographystyle{ims} 
+\bibliography{dblink} 
+
+
+\clearpage
+\newpage
+
+\section*{Appendix}
+
+\textbf{This is an optional appendix in case that you run out of space in the main body of your paper/report for convergence diagnostics, plate diagrams, or other important supporting materials.}
+
+
+
+\end{document}
+
