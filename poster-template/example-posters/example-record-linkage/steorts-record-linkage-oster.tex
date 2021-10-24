@@ -1,0 +1,386 @@
+% Simple poster (portrait)
+% Author: Sofia Jijon (https://sjijon.github.io)
+% Last Update: Sept 9, 2021
+% Latest Version: https://github.com/sjijon/TeX-templates/tree/main/Tikzposter%20posters/Simple%20poster
+
+\documentclass[a0paper,portrait,margin=0pt, colspace=24pt,subcolspace=0pt,blockverticalspace=36pt,innermargin=50pt]{tikzposter}
+
+\usepackage{amssymb,amsfonts,amsmath,latexsym,amsthm,bm}
+%\usepackage[usenames,dvipsnames]{color}
+%\usepackage{enumitem}
+%\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{condition}[theorem]{Condition}
+%\newtheorem{algorithm}[theorem]{Algorithm}
+
+\usepackage[latin9]{inputenc}
+\usepackage[square,numbers]{natbib} 	% Bibliography manager
+\usepackage{amsmath,amssymb}
+\usepackage{lipsum}  				    % Random Text
+\usepackage[colalign]{aligncolsatbottom}  %To align columns at bottom (!! please run 2 times)
+\input{symbols-v04}
+\input{simbologia}
+
+%..............................................................................................................................................................................................
+% Display
+\tikzposterlatexaffectionproofoff 			
+\usetikzlibrary{shapes.geometric,arrows.meta,positioning}  %Tikz Libraries
+
+% Fonts
+\usepackage{helvet}					% Sans-Serif
+\renewcommand{\familydefault}{\sfdefault}	%
+
+% Colors
+	\definecolor{MyOrange}{rgb}{0.8, 0.33, 0}
+	\definecolor{MyBrown}{rgb}{0.28, 0.20, 0.20}
+	\definecolor{MyGreen}{rgb}{0.33, 0.42, 0.18}
+
+% Theme
+\usetheme{Default}
+\definecolorstyle{MyStyle2016}{
+	\definecolor{ColorOne}{named}{MyBrown} 
+	\definecolor{ColorTwo}{named}{MyOrange}
+	\definecolor{ColorThree}{named}{MyGreen}
+}{
+    % Title Colors
+    \colorlet{titlebgcolor}{ColorOne}
+    \colorlet{titlefgcolor}{white}
+    % Background Colors
+    \colorlet{backgroundcolor}{ColorOne!15}
+    \colorlet{framecolor}{ColorOne}
+    % Block Colors
+    \colorlet{blocktitlebgcolor}{white}
+    \colorlet{blocktitlefgcolor}{ColorTwo}
+    \colorlet{blockbodybgcolor}{white}
+    \colorlet{blockbodyfgcolor}{black}
+    % Innerblock Colors
+    \colorlet{innerblocktitlebgcolor}{ColorOne!15}
+    \colorlet{innerblocktitlefgcolor}{black}
+    \colorlet{innerblockbodybgcolor}{ColorOne!15}
+    \colorlet{innerblockbodyfgcolor}{black}
+    % Note colors
+    \colorlet{notebgcolor}{ColorTwo!20}
+    \colorlet{notefgcolor}{ColorTwo}
+    \colorlet{notefrcolor}{ColorTwo}
+ }
+
+% Color style
+\usecolorstyle{MyStyle2016}
+%..............................................................................................................................................................................................
+\title{Performance Bounds for Graphical Record Linkage}
+
+\author{\underline{Rebecca C. Steorts}\textsuperscript{1}, {Matt Barnes}\textsuperscript{2}, Willie Neiswanger\textsuperscript{2}}
+
+\institute{	\textsuperscript{1}Duke University, Durham, NC\\
+		\textsuperscript{2}Carnegie Mellon University, Pittsburgh, PA}
+
+%..............................................................................................................................................................................................
+\begin{document}
+%
+%
+%	HEAD
+%
+%....................................................................................
+%
+%	Title
+%
+\maketitle[width=0.96\linewidth,titletoblockverticalspace=36pt,linewidth=0,roundedcorners=10]
+%..............................................................................................................................................................................................
+%
+%	LEFT COLUMN
+%
+\begin{columns}
+\column{0.33}
+%....................................................................................
+%
+%	Block
+%
+\block[titleleft,roundedcorners=16]{Record Linkage}{
+	\raggedright
+Record linkage (entity resolution or de-duplication) is the process of removing duplicate entities from large noisy 
+databases. 
+
+
+\begin{center}
+\includegraphics[width=0.15\textwidth]{figures/newEntity2}
+\end{center}
+
+
+}
+
+%....................................................................................
+%
+%	Block
+%
+\block[titleleft,roundedcorners=16]{Graphical Record Linkage}{
+	\raggedright
+
+\setcounter{figure}{1}
+\begin{center}
+\includegraphics[width=0.25\textwidth]{figures/recordLinkage_graphicalModel}
+%\caption{Graphical representation of models in \cite{steorts14smered, steorts15entity}.}
+\end{center}
+
+}
+
+%....................................................................................
+%
+%	Block
+%
+\block[titleleft,roundedcorners=16]{Kullback-Leibler (KL) divergence}{
+
+
+For any two distributions $P$ and $Q$, the maximum power for testing $P$ versus $Q$ is $$\exp\{-n D_{\text{KL}}(P || Q)\}.$$ 
+
+\begin{itemize}
+\item A low value of $D_{KL}$ means that we need many samples to distinguish $P$ from $Q.$
+
+\item How  does changing $\bY$ (latent entity) or $\lam$ (linkage structure) change the distribution of $\bX$ (observed records)? 
+
+\item We search for both meaningful upper and lower bounds. 
+%\item Moreover, we investigate how well can we recover $\bY$ (latent entity) and $\lam$ (linkage structure) from $\bX$ (data).
+
+\end{itemize}
+
+\vspace*{1em}
+
+Assuming the conditions of \cite{steorts14smered, steorts15entity}, 
+let $$\mathcal{P} = \left\{f(X\mid \bY, \Lambda_{ij}, \bm{\theta}, \bm{\beta}): 
+ \forall \Lambda_{ij} \in \{ 1, \ldots, N \}.\right\}$$
+% Given $P, Q \in \mathcal{P}$, 
+
+\begin{itemize}
+\item  $X_1,X_2,\ldots,X_N$ are all independent given $(\bY,\lam, \bm{\theta}, \bm{\beta})$ under both $P, Q \in \mathcal{P}.$ 
+\item This implies that  $D_{X_1, X_2, \ldots, X_N} (P \| Q) = \sum_i D_{X_i}(P \| Q).$
+\end{itemize} 
+
+	
+
+
+	}
+	
+
+
+
+
+		
+	
+	
+%..............................................................................................................................................................................................
+%
+%	CENTER COLUMN
+%
+\column{0.34}
+%....................................................................................
+%
+% 	Block
+%
+\block[titleleft,roundedcorners=16]{Performance Bounds}{
+	\raggedright
+	
+
+\begin{theorem}
+\label{theorem:cat}
+This result finds an upper bound on the KL divergence and a
+ lower bound for the  probability that the categorical model in \cite{steorts14smered} gets the linkage structure incorrect. 
+Let
+$$\gamma = \max_{\Lambda_{ij} \neq \Lambda'_{ij}}
+2\sum_{ij\ell} I(Y_{\Lambda_{ij}\ell} \neq Y_{\Lambda'_{ij}\ell}) (1-\beta_{\ell}) \ln \left \{
+\dfrac{1}{
+\min_m \theta_{\ell m} \beta_{\ell}} \right\}.$$
+%
+ \begin{enumerate}
+\item[i)] The KL divergence is bounded above by $\gamma.$ That is,
+$D_X(P || Q) \leq \gamma \enskip \forall P, Q \in \mathcal{P}$.
+\item[ii)] The minimum probability of getting a latent entity wrong is
+$Pr( {\Lambda}_{ij} \ne \Lambda^\prime_{ij}) \geq 1 - \dfrac{ \gamma + \ln 2}{\ln r}, \enskip \forall i,j$
+\end{enumerate}
+\end{theorem}
+That is, as the latent entities become more distinct, $\gamma$ increases. On the other hand, as the latent entities become more similar, $\gamma \rightarrow 0.$ \\
+\textbf{Remark}:
+Consider Theorem \ref{theorem:cat} (i). Suppose $\beta_{\ell} \rightarrow 1.$ Then $D_{\bX} \geq 0.$ If instead $\beta_{\ell} \rightarrow 0,$ then $D_{\bX} \geq 1.$ The lower bound is only informative when $\beta_{\ell} \rightarrow 0.$ We have more information when the latent entities are separated.
+
+\vspace*{2em}
+
+\begin{theorem}
+\label{theorem:string}
+Assume string and categorical data $\bX$ as in \cite{steorts15entity} and distributions $P,Q \in \mathcal{P}$.  Assume two distinct linkage structures, denoted by $Y_{\Lambda_{ij}\ell}, Y_{\Lambda^\prime_{ij}\ell}.$
+\begin{enumerate}
+\item [i)] There is an upper bound on the KL divergence between any $P,Q \in \mathcal{P}$ 
+given by $\kappa,$ that is $D_X(P||Q) \leq \kappa.$
+%\begin{align}
+%&D_{\bX}(P || Q)\\
+% &\geq
+%\sum_{i,j,\ell} 2(1 - \beta_\ell) \\
+%& + \sum_{i,j,\ell}
+%I(Y_{\Lambda_{ij}\ell} \neq Y_{\Lambda^\prime_{ij}\ell})
+%\left(
+%1 - e^{-c d(Y_{\Lambda_{ij}\ell}, Y_{\Lambda^\prime_{ij}\ell})}
+%\right) E[ e^{-c  d(m, Y_{\Lambda_{ij}\ell})} ],
+%\end{align}
+\item [ii)] $Pr(\Lambda_{ij} \neq \Lambda^\prime_{ij}) \geq 1- \dfrac{\kappa + \ln 2}{\ln r},$
+where 
+\begin{align*}
+\kappa &= \max_{\Lambda_{ij} \neq \Lambda^\prime_{ij}}\bigg[
+2 \sum_{\ell} (1-\beta_\ell) I(Y_{\Lambda_{ij}\ell} \neq Y_{\Lambda^\prime_{ij}\ell}) 
+  +  \\
+& \qquad \sum_{\ell m}  I(Y_{\Lambda_{ij}\ell} \neq Y_{\Lambda^\prime_{ij}\ell}) 
+ \left(
+1 - e^{-c d(Y_{\Lambda_{ij}\ell}, Y_{\Lambda^\prime_{ij}\ell})}
+\right) \\
+&\times E[ e^{-c  d(m, Y_{\Lambda_{ij}\ell})} ] \bigg]\ln\{ (\min Q)^{-1} \}
+\end{align*}
+and $r+1$ is the cardinality of $\mathcal{P}$.
+% where the expectation is taken according to 
+%random variable $M \sim \alpha_\ell.$ That is, $\sum_m  \alpha_\ell (m)
+%e^{-c  d(m, m^\prime)} $ is the moment generating function of $d(M,m^\prime)$ (evaluated at c).
+\end{enumerate}
+\end{theorem}
+
+
+	
+ }
+%....................................................................................
+%
+%	Block
+%
+\block[titleleft,roundedcorners=16]{Priors on the Linkage Structure}{
+	\raggedright
+	\begin{itemize}
+\item Above we a specific discrete uniform prior on $\lam$.  
+\item We extend this to include other discrete uniform priors on $\lam$ including those that are informative. 
+\item Special cases include the work of \cite{zanella2016microclustering, liseo_2011, sadinle_2014, pitman}. 
+\item The theorem on performance bounds generalizes naturally, allowing comparisons to be made in future work. 
+\end{itemize}
+}
+%..............................................................................................................................................................................................
+%
+% 	RIGHT COLUMN
+%
+\column{0.33}
+%%....................................................................................
+%
+%	Block
+%
+\block[titleleft,roundedcorners=16]{Experiments}{
+	\raggedright
+	
+In our experiments (\textbf{Experiment I} and \textbf{Experiment II}), synthetic categorical data are generated according to the 
+Steorts, Hall Fienberg (2014, 2016) or Steorts (2015)  using the parameters in the figures below. 
+\vspace*{1em} 
+
+%\begin{itemize}
+%\item In order to consider a realistic set of strings for $S$, we consider the set of 20 most popular female baby names from 2014, according to the United States Census. Then for the distance $d$, we consider the generalized Levenshtein edit distance.
+%\item For each experiment, we vary exactly one of the parameters to demonstrate its impact of the linkage error rate $Pr( (\hat{\Lambda}_{ij}, \bY) \ne (\Lambda_{ij}, \bY))$. 
+%\item We choose the other values such that the performance is neither extremely low nor extremely high. We set the distortion parameter $\beta_\ell$ to the same value for each $\ell$, i.e.\ $\beta_\ell = 0.6$ denotes a distortion probability of 0.6 for every field. $\beta_\ell = $ 0.0 to 1.0 means we started with $\beta_\ell = 0$ for all $\ell$ and swept the values until $\beta_\ell = 1$ for all $\ell$. \item Recall $p$ is the number of fields, and thus the maximum value of $\ell$. 
+%\item We also set each $\theta_{\ell m}$ to the same value, i.e.\ $\theta_{\ell m} = 0.1$ denotes $\theta_{\ell m} = 0.1$ for all $\ell$ and all $m$. This further implies each field $\ell$ takes on exactly $M_\ell = 1/\theta_{\ell m}$ values in order for $\theta_\ell$ to be a valid probability distribution.
+%\end{itemize}
+
+\vspace*{1em} 
+
+%\textbf{Categorical Experiments}:
+%\begin{center}
+%  \begin{tabular}{ l c c c c}
+%    Experiment & $N$ & $\beta_\ell $ & $p = p_c$  & $\theta_{\ell m}$ \\ \hline
+%    Fig. 1(a) & 10 to 500 & 0.6 & 3 & 0.1 \\
+%    Fig. 1(b) & 100  & 0 to 1 & 3 & 0.1 \\
+%    Fig. 1(c) & 100  & 0.6 & 1 to 8& 0.25 \\
+%    Fig. 1(d) & 100  & 0.8  & 5& $\frac{1}{46} \text{ to } 1$
+%  \end{tabular}
+%%  \mycaption{Categorical Experiments}
+%  \label{table:params}
+%\end{center}
+%
+%\textbf{String Experiments}:
+%\begin{center}
+%  \begin{tabular}{ l c c c c c}
+%    Experiment & $N$ & $\beta_\ell $ & $p = p_s$ & $c$ \\ \hline
+%    Fig. 2(a) & 100 to 500 & 0.6  & 1 &  1.0 \\
+%    Fig. 2(b) & 100  & 0.2 to 1 & 1  & 1.0 \\
+%    Fig. 2(c) & 100  & 0.6 & 1 to 10  & 1.0 \\
+%    Fig. 2(d) & 100  & 0.6 & 1 & 0 to 2
+%  \end{tabular}
+%%  \mycaption{String Experiments}
+%  \label{table:params-str}
+%\end{center}
+
+
+\begin{center}
+\includegraphics[width=0.25\textwidth]{figures/e1} \label{fig:cat}
+%\mycaption{Theorem 1 (gold squares) holds on simulated
+%    categorical records compared to exact sampling (grey circles) and Gibbs sampler (blue diamonds).}
+\end{center}
+
+\vspace*{1em} 
+
+\begin{center}
+\includegraphics[width=0.25\textwidth]{figures/e2} \label{fig:str}
+%\mycaption{Theorem 2 (gold squares) holds on simulated
+%    noisy string records  compared to exact sampling (grey circles) and Gibbs sampler (blue diamonds).}
+\end{center}
+
+
+
+
+
+
+	
+	}
+%....................................................................................
+%
+%	Block
+%
+\block[titleleft,roundedcorners=16]{Conclusions and Acknowledgements}{
+	\raggedright
+	
+\begin{itemize}
+\item We have proposed the first performance bounds, to our knowledge, for record linkage models. 
+\item Is it possible to prove tighter bounds?
+\item Is it possible to compare to models outside of Gibbs partition prior models? 
+%\item Can we avoid the label switching issue to make the performance bounds practical for real data?
+\end{itemize}	
+
+\vspace*{1em}
+
+\textbf{Acknowledgements}: This work was supported in
+part by NSF CAREER Award SES-1652431 and SES-1534412. This poster is based upon the original open source work of 
+Sofia Jijon (https://sjijon.github.io). 
+ }
+\end{columns} 
+%..............................................................................................................................................................................................
+%
+%	FOOT
+%
+%....................................................................................
+%
+%	References
+%
+\block[titleleft,roundedcorners=16]{}{
+\small
+\begin{minipage}{0.73\linewidth}
+	\nocite{*}
+	\bibliographystyle{unsrtnat}
+	\bibliography{references}
+ \end{minipage}
+%....................................................................................
+%
+%	Logos
+%
+\begin{minipage}{0.2\linewidth}
+\centering
+	\includegraphics[height=5cm]{Figures/Logo_GitHub}
+\end{minipage}
+}
+%....................................................................................
+%
+%	My info
+%
+\note[width=14cm,targetoffsetx=3cm,targetoffsety=3cm,rotate=15]{
+	\textbf{Contact information:}\\
+	Rebecca C. Steorts\\
+	resteorts.github.io
+}
+\end{document}
