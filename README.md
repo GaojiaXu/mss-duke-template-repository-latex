@@ -1,5 +1,4 @@
 # mss-duke-template-repository
-MSS template repository 
 
 This repository contains template files for the Duke Statistical Science Master's Program for Portfolio Projects. 
 
