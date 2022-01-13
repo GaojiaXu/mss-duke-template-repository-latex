@@ -1,6 +1,6 @@
-# mss-duke-template-repository
+# mss-duke-template-repository-latex
 
-This repository contains template files for the Duke Statistical Science Master's Program for Portfolio Projects. 
+This repository contains LaTeX template files for the Duke Statistical Science Master's Program for Portfolio Projects. 
 
 Information about the Duke MS program can be found at: https://stat.duke.edu/ms
 
